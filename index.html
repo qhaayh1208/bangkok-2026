@@ -1,5 +1,6 @@
-<!doctype html><html lang="zh-Hant"><head><meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1"><title>2026 曼谷親子自由行</title>
+<!DOCTYPE html>
+<html lang="zh-Hant"><head><meta charset="utf-8"/>
+<meta content="width=device-width,initial-scale=1" name="viewport"/><title>2026 曼谷親子自由行</title>
 <style>
 :root{--fs:19px;--ink:#26333b;--muted:#6d7a82;--blue:#466d80;--pale:#eef5f6;--line:#dfe8e8;--bg:#f8faf9;--white:#fff}
 *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"PingFang TC","Microsoft JhengHei",sans-serif;background:var(--bg);color:var(--ink);font-size:var(--fs);line-height:1.75}
@@ -106,201 +107,345 @@ footer{text-align:center;color:var(--muted);padding:35px 15px;border-top:1px sol
 }
 #backToTop:hover{opacity:1}
 @media print{#backToTop{display:none}}
+
+.day-accordion{
+  max-width:900px;
+  margin:0 auto 16px;
+  padding:0 18px;
+}
+.day-accordion > summary{
+  list-style:none;
+  cursor:pointer;
+  background:#fff;
+  border:1px solid var(--line);
+  border-radius:14px;
+  padding:16px 18px;
+  box-shadow:0 1px 2px rgba(38,51,59,.03);
+}
+.day-accordion > summary::-webkit-details-marker{display:none}
+.day-accordion > summary::marker{display:none}
+.day-accordion .day-title{
+  margin:0;
+  padding:0;
+  border:0;
+}
+.day-accordion .open-label{
+  display:block;
+  margin-top:8px;
+  color:var(--blue);
+  font-size:.82em;
+  font-weight:700;
+}
+.day-accordion .open-text{display:none}
+.day-accordion[open] .closed-text{display:none}
+.day-accordion[open] .open-text{display:inline}
+.day-accordion .open-label::after{content:" ▼";font-size:.85em}
+.day-accordion[open] .open-label::after{content:" ▲"}
+.day-accordion .day-content{
+  padding:14px 0 2px;
+}
+.day-accordion[open] > summary{
+  border-color:#c8dcdf;
+  background:#fbfdfd;
+}
+@media(max-width:650px){
+  .day-accordion{padding:0 12px;margin-bottom:12px}
+  .day-accordion > summary{padding:14px}
+}
+@media print{
+  .day-accordion{display:block}
+  .day-accordion > summary{border:0;padding:0}
+  .day-accordion .open-label{display:none}
+  .day-accordion .day-content{display:block!important}
+}
+
+.day-accordion .day-main-heading{
+  display:block;
+  font-size:clamp(22px,5.6vw,30px);
+  line-height:1.35;
+  font-weight:800;
+  color:var(--ink,#26333B);
+  letter-spacing:.01em;
+  margin:0 0 8px;
+}
+.day-accordion > summary{
+  position:relative;
+  padding-right:52px;
+}
+.day-accordion > summary::after{
+  content:"＋";
+  position:absolute;
+  right:18px;
+  top:50%;
+  transform:translateY(-50%);
+  width:34px;
+  height:34px;
+  border-radius:50%;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  background:var(--blue,#466D80);
+  color:#fff;
+  font-size:24px;
+  font-weight:700;
+}
+.day-accordion[open] > summary::after{content:"−";}
+.day-accordion .open-label{
+  font-size:15px;
+  margin-top:4px;
+}
+
+.day-main-heading > div:first-child{
+  display:flex !important;
+  align-items:baseline;
+  gap:18px !important;
+  flex-wrap:wrap;
+}
+.day-number{
+  font-size:clamp(24px,6vw,32px);
+  font-weight:850;
+  letter-spacing:.02em;
+}
+.day-date{
+  font-size:clamp(24px,6vw,32px);
+  font-weight:850;
+}
+.day-total-title{
+  display:block;
+  margin:8px 0 5px;
+  font-size:clamp(18px,4.8vw,23px);
+  line-height:1.35;
+  font-weight:800;
+  color:var(--blue,#466D80);
+}
 </style></head><body><div id="top"></div>
 <header class="hero"><div class="eyebrow">BANGKOK 2026</div><h1>曼谷親子自由行</h1><div class="sub">8 天 7 夜｜2026/8/22–8/29｜簡單清爽・大字閱讀版</div></header>
 <div class="controls"><button onclick="size(-1)">A−</button><button onclick="resetSize()">A</button><button onclick="size(1)">A＋</button></div>
 <nav><a href="#d1">8/22</a><a href="#d2">8/23</a><a href="#d3">8/24</a><a href="#d4">8/25</a><a href="#d5">8/26</a><a href="#d6">8/27</a><a href="#d7">8/28</a><a href="#d8">8/29</a><a href="#safe">安全</a><a href="#pack">行李</a></nav>
-<section class="info"><div class="summary"><div><b>航班</b>CI831 桃園 T1 09:25 → <a class="maplink" href="https://www.google.com/maps/search/?api=1&query=BKK+Bangkok+Thailand" target="_blank" rel="noopener">BKK<span class="mapicon">↗</span></a> 12:10<br>CI832 <a class="maplink" href="https://www.google.com/maps/search/?api=1&query=BKK+Bangkok+Thailand" target="_blank" rel="noopener">BKK<span class="mapicon">↗</span></a> 13:20 → 桃園 T1 18:00</div><div><b>住宿</b><a class="maplink" href="https://www.google.com/maps/search/?api=1&query=Kokotel+Bangkok+Sukhumvit+50+Bangkok+Thailand" target="_blank" rel="noopener">Kokotel Bangkok Sukhumvit 50<span class="mapicon">↗</span></a>・On Nut<br><a class="maplink" href="https://www.google.com/maps/search/?api=1&query=BTS+On+Nut+Bangkok+Thailand" target="_blank" rel="noopener">BTS On Nut<span class="mapicon">↗</span></a>（E9）</div></div></section>
-
-<section class="day" id="d1">
- <div class="day-title"><div><small>DAY 1</small><strong>8/22（六）</strong></div><h2>抵達曼谷・On Nut 初日</h2></div>
- <div class="cards">
-  <article><h3>今日重點</h3><ul><li>CI831 09:25 桃園 T1 出發，12:10 抵達 <a class="maplink" href="https://www.google.com/maps/search/?api=1&query=BKK+Bangkok+Thailand" target="_blank" rel="noopener">BKK<span class="mapicon">↗</span></a>。</li><li>出關後先去 B1 換泰銖，再與接機司機會合。</li><li>NET 樂園 16:00 後才到飯店就取消。</li><li>晚上活動集中 On Nut，累了隨時回飯店。</li></ul></article>
-  <article><h3>詳細時間表</h3><div class="time"><strong>09:25</strong><span>CI831 桃園 T1 起飛</span></div><div class="time"><strong>12:10</strong><span>抵達 <a class="maplink" href="https://www.google.com/maps/search/?api=1&query=BKK+Bangkok+Thailand" target="_blank" rel="noopener">BKK<span class="mapicon">↗</span></a>；入境、領行李、海關</span></div><div class="time"><strong>抵達後</strong><span>B1 換泰銖，預留 20–30 分鐘</span></div><div class="time"><strong>下午</strong><span>搭預約接機前往 Kokotel；若時間允許再去 NET 樂園</span></div><div class="time"><strong>晚上</strong><span>Lotus／On Nut；有精神再做 60 分鐘按摩</span></div></article>
-  <article><h3>交通方式</h3><div class="row"><b>機場</b><span><a class="maplink" href="https://www.google.com/maps/search/?api=1&query=BKK+Bangkok+Thailand" target="_blank" rel="noopener">BKK<span class="mapicon">↗</span></a> 入境 → 領行李 → 海關 → B1 換錢</span></div><div class="row"><b>接機</b><span>溫晴一家；換錢後會合</span></div><div class="row"><b>下午</b><span>Kokotel → MUVMI → <a class="maplink" href="https://www.google.com/maps/search/?api=1&query=ChumChum+Grocery+Bangkok+Thailand" target="_blank" rel="noopener">ChumChum Grocery<span class="mapicon">↗</span></a>（選配）</span></div><div class="row"><b>傍晚</b><span>MUVMI 回 On Nut → Lotus&#x27;s Sukhumvit 50</span></div><div class="row"><b>晚上</b><span>晚餐／做指甲／60 分鐘按摩 → 步行回飯店</span></div></article>
-  <article class="plan"><h3>Plan B</h3><p>累了就直接回飯店；NET 樂園屬選配。</p></article>
- </div>
-
+<section class="info"><div class="summary"><div><b>航班</b>CI831 桃園 T1 09:25 → <a class="maplink" href="https://www.google.com/maps/search/?api=1&amp;query=BKK+Bangkok+Thailand" rel="noopener" target="_blank">BKK<span class="mapicon">↗</span></a> 12:10<br/>CI832 <a class="maplink" href="https://www.google.com/maps/search/?api=1&amp;query=BKK+Bangkok+Thailand" rel="noopener" target="_blank">BKK<span class="mapicon">↗</span></a> 13:20 → 桃園 T1 18:00</div><div><b>住宿</b><a class="maplink" href="https://www.google.com/maps/search/?api=1&amp;query=Kokotel+Bangkok+Sukhumvit+50+Bangkok+Thailand" rel="noopener" target="_blank">Kokotel Bangkok Sukhumvit 50<span class="mapicon">↗</span></a>・On Nut<br/><a class="maplink" href="https://www.google.com/maps/search/?api=1&amp;query=BTS+On+Nut+Bangkok+Thailand" rel="noopener" target="_blank">BTS On Nut<span class="mapicon">↗</span></a>（E9）</div></div></section>
+<details class="day day-accordion" id="d1">
+<summary><div class="day-main-heading"><div><span class="day-number">DAY 1</span><span class="day-date">8/22（六）</span></div>
+<div class="day-total-title">✈️ 抵達曼谷・入住飯店</div><span class="open-label"><span class="closed-text">點我打開這一天</span><span class="open-text">點我收合這一天</span></span>
+</div></summary>
+<div class="day-content">
+<h2>抵達曼谷・On Nut 初日</h2></div>
+<div class="cards">
+<article><h3>今日重點</h3><ul><li>CI831 09:25 桃園 T1 出發，12:10 抵達 <a class="maplink" href="https://www.google.com/maps/search/?api=1&amp;query=BKK+Bangkok+Thailand" rel="noopener" target="_blank">BKK<span class="mapicon">↗</span></a>。</li><li>出關後先去 B1 換泰銖，再與接機司機會合。</li><li>NET 樂園 16:00 後才到飯店就取消。</li><li>晚上活動集中 On Nut，累了隨時回飯店。</li></ul></article>
+<article><h3>詳細時間表</h3><div class="time"><strong>09:25</strong><span>CI831 桃園 T1 起飛</span></div><div class="time"><strong>12:10</strong><span>抵達 <a class="maplink" href="https://www.google.com/maps/search/?api=1&amp;query=BKK+Bangkok+Thailand" rel="noopener" target="_blank">BKK<span class="mapicon">↗</span></a>；入境、領行李、海關</span></div><div class="time"><strong>抵達後</strong><span>B1 換泰銖，預留 20–30 分鐘</span></div><div class="time"><strong>下午</strong><span>搭預約接機前往 Kokotel；若時間允許再去 NET 樂園</span></div><div class="time"><strong>晚上</strong><span>Lotus／On Nut；有精神再做 60 分鐘按摩</span></div></article>
+<article><h3>交通方式</h3><div class="row"><b>機場</b><span><a class="maplink" href="https://www.google.com/maps/search/?api=1&amp;query=BKK+Bangkok+Thailand" rel="noopener" target="_blank">BKK<span class="mapicon">↗</span></a> 入境 → 領行李 → 海關 → B1 換錢</span></div><div class="row"><b>接機</b><span>溫晴一家；換錢後會合</span></div><div class="row"><b>下午</b><span>Kokotel → MUVMI → <a class="maplink" href="https://www.google.com/maps/search/?api=1&amp;query=ChumChum+Grocery+Bangkok+Thailand" rel="noopener" target="_blank">ChumChum Grocery<span class="mapicon">↗</span></a>（選配）</span></div><div class="row"><b>傍晚</b><span>MUVMI 回 On Nut → Lotus's Sukhumvit 50</span></div><div class="row"><b>晚上</b><span>晚餐／做指甲／60 分鐘按摩 → 步行回飯店</span></div></article>
+<article class="plan"><h3>Plan B</h3><p>累了就直接回飯店；NET 樂園屬選配。</p></article>
+</div>
 <div class="kid-interaction">
-  <div class="kid-head">
-    <small>親子互動時間</small>
-    <strong>今天選一選・寫一點點</strong>
-    <span>不用每題都回答，想選再選、想寫再寫。</span>
-  </div>
-  <div class="simple-q"><div class="q-title">今天剛到曼谷，你覺得現在怎麼樣？</div><div class="choices"><button type="button" class="choice" data-group="d1q1" onclick="pick(this)">😊 開心</button><button type="button" class="choice" data-group="d1q1" onclick="pick(this)">😐 還好</button><button type="button" class="choice" data-group="d1q1" onclick="pick(this)">😴 有點累</button><button type="button" class="choice" data-group="d1q1" onclick="pick(this)">🥵 太熱了</button></div><input type="hidden" id="d1q1" value=""></div><div class="simple-q"><div class="q-title">今天比較喜歡哪一個？</div><div class="choices"><button type="button" class="choice" data-group="d1q2" onclick="pick(this)">✈️ 坐飛機</button><button type="button" class="choice" data-group="d1q2" onclick="pick(this)">🛺 搭車</button><button type="button" class="choice" data-group="d1q2" onclick="pick(this)">🏨 到飯店</button><button type="button" class="choice" data-group="d1q2" onclick="pick(this)">🛍️ 逛 On Nut</button></div><input type="hidden" id="d1q2" value=""></div><div class="simple-q write-q"><label for="d1write">今天最想記住的是：</label><textarea id="d1write" rows="2" placeholder="可以寫一個字、一句話，也可以畫個小圖案…"></textarea></div><div class="simple-q need-box"><div class="q-title">現在需要什麼？</div><div class="choices"><button type="button" class="choice need" data-group="d1need" onclick="pick(this)">💧 喝水</button><button type="button" class="choice need" data-group="d1need" onclick="pick(this)">🍴 吃東西</button><button type="button" class="choice need" data-group="d1need" onclick="pick(this)">🪑 休息</button><button type="button" class="choice need" data-group="d1need" onclick="pick(this)">🔇 安靜一下</button><button type="button" class="choice need" data-group="d1need" onclick="pick(this)">🏠 回飯店</button></div></div>
-</div></section>
-<section class="day" id="d2">
- <div class="day-title"><div><small>DAY 2</small><strong>8/23（日）</strong></div><h2>洽圖洽週末市集・Terminal 21</h2></div>
- <div class="cards">
-  <article><h3>今日重點</h3><ul><li>上午核心：09:00 進市場、11:00 撤進 Mixt。</li><li>洽圖洽只走 Section 3 → 4 → 2 → 1–2，不跨區追名店。</li><li>爸爸＋弟弟累了可提早進 Mixt；Mixt 是固定集合／午餐點。吃完午餐可考慮兒童探索博物館。</li><li>下午利用回程必經的 Asok 加入 Terminal 21。</li></ul></article>
-  <article><h3>詳細時間表</h3><div class="time"><strong>08:10</strong><span>從 Kokotel 步行至 <a class="maplink" href="https://www.google.com/maps/search/?api=1&query=BTS+On+Nut+Bangkok+Thailand" target="_blank" rel="noopener">BTS On Nut<span class="mapicon">↗</span></a></span></div><div class="time"><strong>約 09:00</strong><span><a class="maplink" href="https://www.google.com/maps/search/?api=1&query=Kamphaeng+Phet+Bangkok+Thailand" target="_blank" rel="noopener">Kamphaeng Phet<span class="mapicon">↗</span></a> 2 號出口進洽圖洽</span></div><div class="time"><strong>09:00–10:45</strong><span>Section 3 → 4 → 2 → Karmakamet（選配）→ 1–2</span></div><div class="time"><strong>11:00–12:00</strong><span>Mixt 3F Food Court 午餐／吹冷氣</span></div><div class="time"><strong>12:45–14:00</strong><span>兒童探索博物館，大人休息</span></div><div class="time"><strong>14:00–16:30</strong><span><a class="maplink" href="https://www.google.com/maps/search/?api=1&query=Terminal+21+Asok+Bangkok+Thailand" target="_blank" rel="noopener">Terminal 21 Asok<span class="mapicon">↗</span></a></span></div><div class="time"><strong>約 17:00</strong><span>Terminal 21 晚餐</span></div><div class="time"><strong>約 19:30</strong><span>媽媽去 Nirvana Treats 按摩 90 分鐘</span></div></article>
-  <article><h3>交通方式</h3><div class="row"><b>去程</b><span><a class="maplink" href="https://www.google.com/maps/search/?api=1&query=BTS+On+Nut+Bangkok+Thailand" target="_blank" rel="noopener">BTS On Nut<span class="mapicon">↗</span></a> E9 → Asok E4 → 步行轉 MRT Sukhumvit BL22</span></div><div class="row"><b>MRT</b><span>Sukhumvit BL22 → <a class="maplink" href="https://www.google.com/maps/search/?api=1&query=Kamphaeng+Phet+Bangkok+Thailand" target="_blank" rel="noopener">Kamphaeng Phet<span class="mapicon">↗</span></a> BL12｜2 號出口</span></div><div class="row"><b>市場</b><span>Section 3 → 4 → 2 → Karmakamet（選配）→ 1–2 → Mixt → 兒童探索博物館</span></div><div class="row"><b>下午</b><span>MRT <a class="maplink" href="https://www.google.com/maps/search/?api=1&query=Kamphaeng+Phet+Bangkok+Thailand" target="_blank" rel="noopener">Kamphaeng Phet<span class="mapicon">↗</span></a> → Sukhumvit → Terminal 21</span></div><div class="row"><b>回程</b><span>BTS Asok E4 → On Nut E9</span></div></article>
-  <article class="plan"><h3>Plan B</h3><p>爸爸＋弟弟 10:30 前後逛累 → 先去 Mixt；全家累 → 縮短 Terminal 21。</p></article>
- </div>
+<div class="kid-head">
+<small>親子互動時間</small>
+<strong>今天選一選・寫一點點</strong>
+<span>不用每題都回答，想選再選、想寫再寫。</span>
+</div>
+<div class="simple-q"><div class="q-title">今天剛到曼谷，你覺得現在怎麼樣？</div><div class="choices"><button class="choice" data-group="d1q1" onclick="pick(this)" type="button">😊 開心</button><button class="choice" data-group="d1q1" onclick="pick(this)" type="button">😐 還好</button><button class="choice" data-group="d1q1" onclick="pick(this)" type="button">😴 有點累</button><button class="choice" data-group="d1q1" onclick="pick(this)" type="button">🥵 太熱了</button></div><input id="d1q1" type="hidden" value=""/></div><div class="simple-q"><div class="q-title">今天比較喜歡哪一個？</div><div class="choices"><button class="choice" data-group="d1q2" onclick="pick(this)" type="button">✈️ 坐飛機</button><button class="choice" data-group="d1q2" onclick="pick(this)" type="button">🛺 搭車</button><button class="choice" data-group="d1q2" onclick="pick(this)" type="button">🏨 到飯店</button><button class="choice" data-group="d1q2" onclick="pick(this)" type="button">🛍️ 逛 On Nut</button></div><input id="d1q2" type="hidden" value=""/></div><div class="simple-q write-q"><label for="d1write">今天最想記住的是：</label><textarea id="d1write" placeholder="可以寫一個字、一句話，也可以畫個小圖案…" rows="2"></textarea></div><div class="simple-q need-box"><div class="q-title">現在需要什麼？</div><div class="choices"><button class="choice need" data-group="d1need" onclick="pick(this)" type="button">💧 喝水</button><button class="choice need" data-group="d1need" onclick="pick(this)" type="button">🍴 吃東西</button><button class="choice need" data-group="d1need" onclick="pick(this)" type="button">🪑 休息</button><button class="choice need" data-group="d1need" onclick="pick(this)" type="button">🔇 安靜一下</button><button class="choice need" data-group="d1need" onclick="pick(this)" type="button">🏠 回飯店</button></div></div>
+</div>
 
-  <div class="saved-map">
-    <div>
-      <small>GOOGLE MAPS</small>
-      <strong>🎯 我的 Google Maps 收藏｜洽圖洽一日遊</strong>
-      <span>開啟你原本儲存的地點清單</span>
-    </div>
-    <a href="https://maps.app.goo.gl/cVHRsRJCB4adW1bG9?g_st=i" target="_blank" rel="noopener">開啟收藏地圖 ↗</a>
-  </div>
-
+</details>
+<details class="day day-accordion" id="d2">
+<summary><div class="day-main-heading"><div><span class="day-number">DAY 2</span><span class="day-date">8/23（日）</span></div>
+<div class="day-total-title">🛍️ 洽圖洽一日遊</div><span class="open-label"><span class="closed-text">點我打開這一天</span><span class="open-text">點我收合這一天</span></span>
+</div></summary>
+<div class="day-content">
+<h2>洽圖洽週末市集・Terminal 21</h2></div>
+<div class="cards">
+<article><h3>今日重點</h3><ul><li>上午核心：09:00 進市場、11:00 撤進 Mixt。</li><li>洽圖洽只走 Section 3 → 4 → 2 → 1–2，不跨區追名店。</li><li>爸爸＋弟弟累了可提早進 Mixt；Mixt 是固定集合／午餐點。吃完午餐可考慮兒童探索博物館。</li><li>下午利用回程必經的 Asok 加入 Terminal 21。</li></ul></article>
+<article><h3>詳細時間表</h3><div class="time"><strong>08:10</strong><span>從 Kokotel 步行至 <a class="maplink" href="https://www.google.com/maps/search/?api=1&amp;query=BTS+On+Nut+Bangkok+Thailand" rel="noopener" target="_blank">BTS On Nut<span class="mapicon">↗</span></a></span></div><div class="time"><strong>約 09:00</strong><span><a class="maplink" href="https://www.google.com/maps/search/?api=1&amp;query=Kamphaeng+Phet+Bangkok+Thailand" rel="noopener" target="_blank">Kamphaeng Phet<span class="mapicon">↗</span></a> 2 號出口進洽圖洽</span></div><div class="time"><strong>09:00–10:45</strong><span>Section 3 → 4 → 2 → Karmakamet（選配）→ 1–2</span></div><div class="time"><strong>11:00–12:00</strong><span>Mixt 3F Food Court 午餐／吹冷氣</span></div><div class="time"><strong>12:45–14:00</strong><span>兒童探索博物館，大人休息</span></div><div class="time"><strong>14:00–16:30</strong><span><a class="maplink" href="https://www.google.com/maps/search/?api=1&amp;query=Terminal+21+Asok+Bangkok+Thailand" rel="noopener" target="_blank">Terminal 21 Asok<span class="mapicon">↗</span></a></span></div><div class="time"><strong>約 17:00</strong><span>Terminal 21 晚餐</span></div><div class="time"><strong>約 19:30</strong><span>媽媽去 Nirvana Treats 按摩 90 分鐘</span></div></article>
+<article><h3>交通方式</h3><div class="row"><b>去程</b><span><a class="maplink" href="https://www.google.com/maps/search/?api=1&amp;query=BTS+On+Nut+Bangkok+Thailand" rel="noopener" target="_blank">BTS On Nut<span class="mapicon">↗</span></a> E9 → Asok E4 → 步行轉 MRT Sukhumvit BL22</span></div><div class="row"><b>MRT</b><span>Sukhumvit BL22 → <a class="maplink" href="https://www.google.com/maps/search/?api=1&amp;query=Kamphaeng+Phet+Bangkok+Thailand" rel="noopener" target="_blank">Kamphaeng Phet<span class="mapicon">↗</span></a> BL12｜2 號出口</span></div><div class="row"><b>市場</b><span>Section 3 → 4 → 2 → Karmakamet（選配）→ 1–2 → Mixt → 兒童探索博物館</span></div><div class="row"><b>下午</b><span>MRT <a class="maplink" href="https://www.google.com/maps/search/?api=1&amp;query=Kamphaeng+Phet+Bangkok+Thailand" rel="noopener" target="_blank">Kamphaeng Phet<span class="mapicon">↗</span></a> → Sukhumvit → Terminal 21</span></div><div class="row"><b>回程</b><span>BTS Asok E4 → On Nut E9</span></div></article>
+<article class="plan"><h3>Plan B</h3><p>爸爸＋弟弟 10:30 前後逛累 → 先去 Mixt；全家累 → 縮短 Terminal 21。</p></article>
+</div>
+<div class="saved-map">
+<div>
+<small>GOOGLE MAPS</small>
+<strong>🎯 我的 Google Maps 收藏｜洽圖洽一日遊</strong>
+<span>開啟你原本儲存的地點清單</span>
+</div>
+<a href="https://maps.app.goo.gl/cVHRsRJCB4adW1bG9?g_st=i" rel="noopener" target="_blank">開啟收藏地圖 ↗</a>
+</div>
 <div class="kid-interaction">
-  <div class="kid-head">
-    <small>親子互動時間</small>
-    <strong>今天選一選・寫一點點</strong>
-    <span>不用每題都回答，想選再選、想寫再寫。</span>
-  </div>
-  <div class="simple-q"><div class="q-title">洽圖洽今天最好玩的是？</div><div class="choices"><button type="button" class="choice" data-group="d2q1" onclick="pick(this)">🛍️ 看東西</button><button type="button" class="choice" data-group="d2q1" onclick="pick(this)">🍴 吃東西</button><button type="button" class="choice" data-group="d2q1" onclick="pick(this)">🚆 搭 BTS／MRT</button><button type="button" class="choice" data-group="d2q1" onclick="pick(this)">🧸 兒童探索博物館</button></div><input type="hidden" id="d2q1" value=""></div><div class="simple-q"><div class="q-title">今天走路的感覺？</div><div class="choices"><button type="button" class="choice" data-group="d2q2" onclick="pick(this)">🙂 可以</button><button type="button" class="choice" data-group="d2q2" onclick="pick(this)">😐 有點累</button><button type="button" class="choice" data-group="d2q2" onclick="pick(this)">😴 很累</button><button type="button" class="choice" data-group="d2q2" onclick="pick(this)">🪑 想休息</button></div><input type="hidden" id="d2q2" value=""></div><div class="simple-q write-q"><label for="d2write">今天看到最有趣的東西：</label><textarea id="d2write" rows="2" placeholder="可以寫一個字、一句話，也可以畫個小圖案…"></textarea></div><div class="simple-q need-box"><div class="q-title">現在需要什麼？</div><div class="choices"><button type="button" class="choice need" data-group="d2need" onclick="pick(this)">💧 喝水</button><button type="button" class="choice need" data-group="d2need" onclick="pick(this)">🍴 吃東西</button><button type="button" class="choice need" data-group="d2need" onclick="pick(this)">🪑 休息</button><button type="button" class="choice need" data-group="d2need" onclick="pick(this)">🔇 安靜一下</button><button type="button" class="choice need" data-group="d2need" onclick="pick(this)">🏠 回飯店</button></div></div>
-</div></section>
-<section class="day" id="d3">
- <div class="day-title"><div><small>DAY 3</small><strong>8/24（一）</strong></div><h2>大城一日遊</h2></div>
- <div class="cards">
-  <article><h3>今日重點</h3><ul><li>07:30 包車從 Kokotel 出發，10 小時基本時數至 17:30。</li><li>核心是「動物園＋船麵＋兩座代表寺廟」。</li><li>寺廟行程注意遮肩、遮膝。</li><li>Save One Go 夜市是可刪減項，不影響主行程。</li></ul></article>
-  <article><h3>詳細時間表</h3><div class="time"><strong>07:30</strong><span>司機到飯店接人；包車計時開始</span></div><div class="time"><strong>上午</strong><span><a class="maplink" href="https://www.google.com/maps/search/?api=1&query=Sriayuthaya+Lion+Park+Bangkok+Thailand" target="_blank" rel="noopener">Sriayuthaya Lion Park<span class="mapicon">↗</span></a>（小朋友優先）</span></div><div class="time"><strong>中午</strong><span><a class="maplink" href="https://www.google.com/maps/search/?api=1&query=Pa+Lek+Boat+Noodle+Bangkok+Thailand" target="_blank" rel="noopener">Pa Lek Boat Noodle<span class="mapicon">↗</span></a> 午餐</span></div><div class="time"><strong>下午</strong><span><a class="maplink" href="https://www.google.com/maps/search/?api=1&query=%E7%91%AA%E5%93%88%E6%B3%B0%E5%AF%BA+Bangkok+Thailand" target="_blank" rel="noopener">瑪哈泰寺<span class="mapicon">↗</span></a> → Roti Sai Mai 糖絲捲餅 → <a class="maplink" href="https://www.google.com/maps/search/?api=1&query=%E6%9F%B4%E7%93%A6%E5%A1%94%E9%82%A3%E8%98%AD%E5%AF%BA+Bangkok+Thailand" target="_blank" rel="noopener">柴瓦塔那蘭寺<span class="mapicon">↗</span></a></span></div><div class="time"><strong>傍晚</strong><span>回曼谷</span></div><div class="time"><strong>晚上</strong><span>有體力再逛 Save One Go；累了直接回飯店</span></div></article>
-  <article><h3>交通方式</h3><div class="row"><b>包車</b><span>Kokotel → <a class="maplink" href="https://www.google.com/maps/search/?api=1&query=Sriayuthaya+Lion+Park+Bangkok+Thailand" target="_blank" rel="noopener">Sriayuthaya Lion Park<span class="mapicon">↗</span></a></span></div><div class="row"><b>午餐</b><span>Lion Park → <a class="maplink" href="https://www.google.com/maps/search/?api=1&query=Pa+Lek+Boat+Noodle+Bangkok+Thailand" target="_blank" rel="noopener">Pa Lek Boat Noodle<span class="mapicon">↗</span></a></span></div><div class="row"><b>古蹟</b><span><a class="maplink" href="https://www.google.com/maps/search/?api=1&query=%E7%91%AA%E5%93%88%E6%B3%B0%E5%AF%BA+Bangkok+Thailand" target="_blank" rel="noopener">瑪哈泰寺<span class="mapicon">↗</span></a> → Roti Sai Mai → <a class="maplink" href="https://www.google.com/maps/search/?api=1&query=%E6%9F%B4%E7%93%A6%E5%A1%94%E9%82%A3%E8%98%AD%E5%AF%BA+Bangkok+Thailand" target="_blank" rel="noopener">柴瓦塔那蘭寺<span class="mapicon">↗</span></a></span></div><div class="row"><b>回程</b><span>大城 → 曼谷</span></div><div class="row"><b>晚上</b><span><a class="maplink" href="https://www.google.com/maps/search/?api=1&query=Save+One+Go+Market+Bangkok+Thailand" target="_blank" rel="noopener">Save One Go Market<span class="mapicon">↗</span></a>（選配）→ Kokotel</span></div></article>
-  <article class="plan"><h3>Plan B</h3><p>太熱 → 寺廟只留 1 座；太累 → 直接刪 Save One Go。</p></article>
- </div>
+<div class="kid-head">
+<small>親子互動時間</small>
+<strong>今天選一選・寫一點點</strong>
+<span>不用每題都回答，想選再選、想寫再寫。</span>
+</div>
+<div class="simple-q"><div class="q-title">洽圖洽今天最好玩的是？</div><div class="choices"><button class="choice" data-group="d2q1" onclick="pick(this)" type="button">🛍️ 看東西</button><button class="choice" data-group="d2q1" onclick="pick(this)" type="button">🍴 吃東西</button><button class="choice" data-group="d2q1" onclick="pick(this)" type="button">🚆 搭 BTS／MRT</button><button class="choice" data-group="d2q1" onclick="pick(this)" type="button">🧸 兒童探索博物館</button></div><input id="d2q1" type="hidden" value=""/></div><div class="simple-q"><div class="q-title">今天走路的感覺？</div><div class="choices"><button class="choice" data-group="d2q2" onclick="pick(this)" type="button">🙂 可以</button><button class="choice" data-group="d2q2" onclick="pick(this)" type="button">😐 有點累</button><button class="choice" data-group="d2q2" onclick="pick(this)" type="button">😴 很累</button><button class="choice" data-group="d2q2" onclick="pick(this)" type="button">🪑 想休息</button></div><input id="d2q2" type="hidden" value=""/></div><div class="simple-q write-q"><label for="d2write">今天看到最有趣的東西：</label><textarea id="d2write" placeholder="可以寫一個字、一句話，也可以畫個小圖案…" rows="2"></textarea></div><div class="simple-q need-box"><div class="q-title">現在需要什麼？</div><div class="choices"><button class="choice need" data-group="d2need" onclick="pick(this)" type="button">💧 喝水</button><button class="choice need" data-group="d2need" onclick="pick(this)" type="button">🍴 吃東西</button><button class="choice need" data-group="d2need" onclick="pick(this)" type="button">🪑 休息</button><button class="choice need" data-group="d2need" onclick="pick(this)" type="button">🔇 安靜一下</button><button class="choice need" data-group="d2need" onclick="pick(this)" type="button">🏠 回飯店</button></div></div>
+</div>
 
-  <div class="saved-map">
-    <div>
-      <small>GOOGLE MAPS</small>
-      <strong>🎯 我的 Google Maps 收藏｜大城一日遊景點</strong>
-      <span>開啟你原本儲存的地點清單</span>
-    </div>
-    <a href="https://maps.app.goo.gl/2XxAo5cK7hEwzUKf7?g_st=i" target="_blank" rel="noopener">開啟收藏地圖 ↗</a>
-  </div>
-
+</details>
+<details class="day day-accordion" id="d3">
+<summary><div class="day-main-heading"><div><span class="day-number">DAY 3</span><span class="day-date">8/24（一）</span></div>
+<div class="day-total-title">🏛️ 大城一日遊</div><span class="open-label"><span class="closed-text">點我打開這一天</span><span class="open-text">點我收合這一天</span></span>
+</div></summary>
+<div class="day-content">
+<h2>大城一日遊</h2></div>
+<div class="cards">
+<article><h3>今日重點</h3><ul><li>07:30 包車從 Kokotel 出發，10 小時基本時數至 17:30。</li><li>核心是「動物園＋船麵＋兩座代表寺廟」。</li><li>寺廟行程注意遮肩、遮膝。</li><li>Save One Go 夜市是可刪減項，不影響主行程。</li></ul></article>
+<article><h3>詳細時間表</h3><div class="time"><strong>07:30</strong><span>司機到飯店接人；包車計時開始</span></div><div class="time"><strong>上午</strong><span><a class="maplink" href="https://www.google.com/maps/search/?api=1&amp;query=Sriayuthaya+Lion+Park+Bangkok+Thailand" rel="noopener" target="_blank">Sriayuthaya Lion Park<span class="mapicon">↗</span></a>（小朋友優先）</span></div><div class="time"><strong>中午</strong><span><a class="maplink" href="https://www.google.com/maps/search/?api=1&amp;query=Pa+Lek+Boat+Noodle+Bangkok+Thailand" rel="noopener" target="_blank">Pa Lek Boat Noodle<span class="mapicon">↗</span></a> 午餐</span></div><div class="time"><strong>下午</strong><span><a class="maplink" href="https://www.google.com/maps/search/?api=1&amp;query=%E7%91%AA%E5%93%88%E6%B3%B0%E5%AF%BA+Bangkok+Thailand" rel="noopener" target="_blank">瑪哈泰寺<span class="mapicon">↗</span></a> → Roti Sai Mai 糖絲捲餅 → <a class="maplink" href="https://www.google.com/maps/search/?api=1&amp;query=%E6%9F%B4%E7%93%A6%E5%A1%94%E9%82%A3%E8%98%AD%E5%AF%BA+Bangkok+Thailand" rel="noopener" target="_blank">柴瓦塔那蘭寺<span class="mapicon">↗</span></a></span></div><div class="time"><strong>傍晚</strong><span>回曼谷</span></div><div class="time"><strong>晚上</strong><span>有體力再逛 Save One Go；累了直接回飯店</span></div></article>
+<article><h3>交通方式</h3><div class="row"><b>包車</b><span>Kokotel → <a class="maplink" href="https://www.google.com/maps/search/?api=1&amp;query=Sriayuthaya+Lion+Park+Bangkok+Thailand" rel="noopener" target="_blank">Sriayuthaya Lion Park<span class="mapicon">↗</span></a></span></div><div class="row"><b>午餐</b><span>Lion Park → <a class="maplink" href="https://www.google.com/maps/search/?api=1&amp;query=Pa+Lek+Boat+Noodle+Bangkok+Thailand" rel="noopener" target="_blank">Pa Lek Boat Noodle<span class="mapicon">↗</span></a></span></div><div class="row"><b>古蹟</b><span><a class="maplink" href="https://www.google.com/maps/search/?api=1&amp;query=%E7%91%AA%E5%93%88%E6%B3%B0%E5%AF%BA+Bangkok+Thailand" rel="noopener" target="_blank">瑪哈泰寺<span class="mapicon">↗</span></a> → Roti Sai Mai → <a class="maplink" href="https://www.google.com/maps/search/?api=1&amp;query=%E6%9F%B4%E7%93%A6%E5%A1%94%E9%82%A3%E8%98%AD%E5%AF%BA+Bangkok+Thailand" rel="noopener" target="_blank">柴瓦塔那蘭寺<span class="mapicon">↗</span></a></span></div><div class="row"><b>回程</b><span>大城 → 曼谷</span></div><div class="row"><b>晚上</b><span><a class="maplink" href="https://www.google.com/maps/search/?api=1&amp;query=Save+One+Go+Market+Bangkok+Thailand" rel="noopener" target="_blank">Save One Go Market<span class="mapicon">↗</span></a>（選配）→ Kokotel</span></div></article>
+<article class="plan"><h3>Plan B</h3><p>太熱 → 寺廟只留 1 座；太累 → 直接刪 Save One Go。</p></article>
+</div>
+<div class="saved-map">
+<div>
+<small>GOOGLE MAPS</small>
+<strong>🎯 我的 Google Maps 收藏｜大城一日遊景點</strong>
+<span>開啟你原本儲存的地點清單</span>
+</div>
+<a href="https://maps.app.goo.gl/2XxAo5cK7hEwzUKf7?g_st=i" rel="noopener" target="_blank">開啟收藏地圖 ↗</a>
+</div>
 <div class="kid-interaction">
-  <div class="kid-head">
-    <small>親子互動時間</small>
-    <strong>今天選一選・寫一點點</strong>
-    <span>不用每題都回答，想選再選、想寫再寫。</span>
-  </div>
-  <div class="simple-q"><div class="q-title">今天比較喜歡哪一個？</div><div class="choices"><button type="button" class="choice" data-group="d3q1" onclick="pick(this)">🦁 動物園</button><button type="button" class="choice" data-group="d3q1" onclick="pick(this)">🛕 寺廟</button><button type="button" class="choice" data-group="d3q1" onclick="pick(this)">🍜 船麵</button><button type="button" class="choice" data-group="d3q1" onclick="pick(this)">🍬 糖絲捲餅</button></div><input type="hidden" id="d3q1" value=""></div><div class="simple-q"><div class="q-title">寺廟參觀的感覺？</div><div class="choices"><button type="button" class="choice" data-group="d3q2" onclick="pick(this)">😊 喜歡</button><button type="button" class="choice" data-group="d3q2" onclick="pick(this)">😐 還好</button><button type="button" class="choice" data-group="d3q2" onclick="pick(this)">🥵 太熱</button><button type="button" class="choice" data-group="d3q2" onclick="pick(this)">🚶 走太久</button></div><input type="hidden" id="d3q2" value=""></div><div class="simple-q write-q"><label for="d3write">今天最喜歡的動物／東西：</label><textarea id="d3write" rows="2" placeholder="可以寫一個字、一句話，也可以畫個小圖案…"></textarea></div><div class="simple-q need-box"><div class="q-title">現在需要什麼？</div><div class="choices"><button type="button" class="choice need" data-group="d3need" onclick="pick(this)">💧 喝水</button><button type="button" class="choice need" data-group="d3need" onclick="pick(this)">🍴 吃東西</button><button type="button" class="choice need" data-group="d3need" onclick="pick(this)">🪑 休息</button><button type="button" class="choice need" data-group="d3need" onclick="pick(this)">🔇 安靜一下</button><button type="button" class="choice need" data-group="d3need" onclick="pick(this)">🏠 回飯店</button></div></div>
-</div></section>
-<section class="day" id="d4">
- <div class="day-title"><div><small>DAY 4</small><strong>8/25（二）</strong></div><h2>丹嫩莎多・美功鐵道</h2></div>
- <div class="cards">
-  <article><h3>今日重點</h3><ul><li>07:30 包車出發；第一站<a class="maplink" href="https://www.google.com/maps/search/?api=1&query=%E4%B8%B9%E5%AB%A9%E8%8E%8E%E5%A4%9A%E6%B0%B4%E4%B8%8A%E5%B8%82%E5%A0%B4+Bangkok+Thailand" target="_blank" rel="noopener">丹嫩莎多水上市場<span class="mapicon">↗</span></a>。</li><li>水上市場以搭船為主，不在這裡吃正式午餐。</li><li>美功核心卡 11:10 進站／11:30 離站看火車穿市場。</li><li>晚餐不是核心；看塞車與體力決定外帶或叫外送。</li></ul></article>
-  <article><h3>詳細時間表</h3><div class="time"><strong>07:30</strong><span>Kokotel 出發</span></div><div class="time"><strong>上午</strong><span>丹嫩莎多搭船＋少量小吃</span></div><div class="time"><strong>11:10／11:30</strong><span>美功看火車進站／離站穿市場</span></div><div class="time"><strong>中午</strong><span>Ruen Wari 首選／<a class="maplink" href="https://www.google.com/maps/search/?api=1&query=Daeng+Seafood+Bangkok+Thailand" target="_blank" rel="noopener">Daeng Seafood<span class="mapicon">↗</span></a> 備選</span></div><div class="time"><strong>下午</strong><span><a class="maplink" href="https://www.google.com/maps/search/?api=1&query=Damnoen+Sky+Bangkok+Thailand" target="_blank" rel="noopener">Damnoen Sky<span class="mapicon">↗</span></a> 拍照、休息</span></div><div class="time"><strong>傍晚</strong><span>視塞車與包車時間回曼谷</span></div></article>
-  <article><h3>交通方式</h3><div class="row"><b>包車</b><span>Kokotel → <a class="maplink" href="https://www.google.com/maps/search/?api=1&query=%E4%B8%B9%E5%AB%A9%E8%8E%8E%E5%A4%9A%E6%B0%B4%E4%B8%8A%E5%B8%82%E5%A0%B4+Bangkok+Thailand" target="_blank" rel="noopener">丹嫩莎多水上市場<span class="mapicon">↗</span></a></span></div><div class="row"><b>上午</b><span>搭船 → 美功鐵道市集</span></div><div class="row"><b>午餐</b><span><a class="maplink" href="https://www.google.com/maps/search/?api=1&query=Ruen+Wari+Restaurant+Bangkok+Thailand" target="_blank" rel="noopener">Ruen Wari Restaurant<span class="mapicon">↗</span></a> 或 <a class="maplink" href="https://www.google.com/maps/search/?api=1&query=Daeng+Seafood+Bangkok+Thailand" target="_blank" rel="noopener">Daeng Seafood<span class="mapicon">↗</span></a>／市場小吃</span></div><div class="row"><b>下午</b><span><a class="maplink" href="https://www.google.com/maps/search/?api=1&query=Damnoen+Sky+Bangkok+Thailand" target="_blank" rel="noopener">Damnoen Sky<span class="mapicon">↗</span></a> 飛機咖啡廳</span></div><div class="row"><b>回程</b><span>回曼谷 → 班塔通外帶（選配）或直接 Kokotel</span></div></article>
-  <article class="plan"><h3>Plan B</h3><p>火車時刻有異動 → 以現場公告為準；晚餐隨時切換為飯店外送。</p></article>
- </div>
+<div class="kid-head">
+<small>親子互動時間</small>
+<strong>今天選一選・寫一點點</strong>
+<span>不用每題都回答，想選再選、想寫再寫。</span>
+</div>
+<div class="simple-q"><div class="q-title">今天比較喜歡哪一個？</div><div class="choices"><button class="choice" data-group="d3q1" onclick="pick(this)" type="button">🦁 動物園</button><button class="choice" data-group="d3q1" onclick="pick(this)" type="button">🛕 寺廟</button><button class="choice" data-group="d3q1" onclick="pick(this)" type="button">🍜 船麵</button><button class="choice" data-group="d3q1" onclick="pick(this)" type="button">🍬 糖絲捲餅</button></div><input id="d3q1" type="hidden" value=""/></div><div class="simple-q"><div class="q-title">寺廟參觀的感覺？</div><div class="choices"><button class="choice" data-group="d3q2" onclick="pick(this)" type="button">😊 喜歡</button><button class="choice" data-group="d3q2" onclick="pick(this)" type="button">😐 還好</button><button class="choice" data-group="d3q2" onclick="pick(this)" type="button">🥵 太熱</button><button class="choice" data-group="d3q2" onclick="pick(this)" type="button">🚶 走太久</button></div><input id="d3q2" type="hidden" value=""/></div><div class="simple-q write-q"><label for="d3write">今天最喜歡的動物／東西：</label><textarea id="d3write" placeholder="可以寫一個字、一句話，也可以畫個小圖案…" rows="2"></textarea></div><div class="simple-q need-box"><div class="q-title">現在需要什麼？</div><div class="choices"><button class="choice need" data-group="d3need" onclick="pick(this)" type="button">💧 喝水</button><button class="choice need" data-group="d3need" onclick="pick(this)" type="button">🍴 吃東西</button><button class="choice need" data-group="d3need" onclick="pick(this)" type="button">🪑 休息</button><button class="choice need" data-group="d3need" onclick="pick(this)" type="button">🔇 安靜一下</button><button class="choice need" data-group="d3need" onclick="pick(this)" type="button">🏠 回飯店</button></div></div>
+</div>
 
-  <div class="saved-map">
-    <div>
-      <small>GOOGLE MAPS</small>
-      <strong>🎯 我的 Google Maps 收藏｜美功鐵道一日遊</strong>
-      <span>開啟你原本儲存的地點清單</span>
-    </div>
-    <a href="https://maps.app.goo.gl/DACE1Vv64nwN9R4fA?g_st=i" target="_blank" rel="noopener">開啟收藏地圖 ↗</a>
-  </div>
-
+</details>
+<details class="day day-accordion" id="d4">
+<summary><div class="day-main-heading"><div><span class="day-number">DAY 4</span><span class="day-date">8/25（二）</span></div>
+<div class="day-total-title">🚂 美功鐵道一日遊</div><span class="open-label"><span class="closed-text">點我打開這一天</span><span class="open-text">點我收合這一天</span></span>
+</div></summary>
+<div class="day-content">
+<h2>丹嫩莎多・美功鐵道</h2></div>
+<div class="cards">
+<article><h3>今日重點</h3><ul><li>07:30 包車出發；第一站<a class="maplink" href="https://www.google.com/maps/search/?api=1&amp;query=%E4%B8%B9%E5%AB%A9%E8%8E%8E%E5%A4%9A%E6%B0%B4%E4%B8%8A%E5%B8%82%E5%A0%B4+Bangkok+Thailand" rel="noopener" target="_blank">丹嫩莎多水上市場<span class="mapicon">↗</span></a>。</li><li>水上市場以搭船為主，不在這裡吃正式午餐。</li><li>美功核心卡 11:10 進站／11:30 離站看火車穿市場。</li><li>晚餐不是核心；看塞車與體力決定外帶或叫外送。</li></ul></article>
+<article><h3>詳細時間表</h3><div class="time"><strong>07:30</strong><span>Kokotel 出發</span></div><div class="time"><strong>上午</strong><span>丹嫩莎多搭船＋少量小吃</span></div><div class="time"><strong>11:10／11:30</strong><span>美功看火車進站／離站穿市場</span></div><div class="time"><strong>中午</strong><span>Ruen Wari 首選／<a class="maplink" href="https://www.google.com/maps/search/?api=1&amp;query=Daeng+Seafood+Bangkok+Thailand" rel="noopener" target="_blank">Daeng Seafood<span class="mapicon">↗</span></a> 備選</span></div><div class="time"><strong>下午</strong><span><a class="maplink" href="https://www.google.com/maps/search/?api=1&amp;query=Damnoen+Sky+Bangkok+Thailand" rel="noopener" target="_blank">Damnoen Sky<span class="mapicon">↗</span></a> 拍照、休息</span></div><div class="time"><strong>傍晚</strong><span>視塞車與包車時間回曼谷</span></div></article>
+<article><h3>交通方式</h3><div class="row"><b>包車</b><span>Kokotel → <a class="maplink" href="https://www.google.com/maps/search/?api=1&amp;query=%E4%B8%B9%E5%AB%A9%E8%8E%8E%E5%A4%9A%E6%B0%B4%E4%B8%8A%E5%B8%82%E5%A0%B4+Bangkok+Thailand" rel="noopener" target="_blank">丹嫩莎多水上市場<span class="mapicon">↗</span></a></span></div><div class="row"><b>上午</b><span>搭船 → 美功鐵道市集</span></div><div class="row"><b>午餐</b><span><a class="maplink" href="https://www.google.com/maps/search/?api=1&amp;query=Ruen+Wari+Restaurant+Bangkok+Thailand" rel="noopener" target="_blank">Ruen Wari Restaurant<span class="mapicon">↗</span></a> 或 <a class="maplink" href="https://www.google.com/maps/search/?api=1&amp;query=Daeng+Seafood+Bangkok+Thailand" rel="noopener" target="_blank">Daeng Seafood<span class="mapicon">↗</span></a>／市場小吃</span></div><div class="row"><b>下午</b><span><a class="maplink" href="https://www.google.com/maps/search/?api=1&amp;query=Damnoen+Sky+Bangkok+Thailand" rel="noopener" target="_blank">Damnoen Sky<span class="mapicon">↗</span></a> 飛機咖啡廳</span></div><div class="row"><b>回程</b><span>回曼谷 → 班塔通外帶（選配）或直接 Kokotel</span></div></article>
+<article class="plan"><h3>Plan B</h3><p>火車時刻有異動 → 以現場公告為準；晚餐隨時切換為飯店外送。</p></article>
+</div>
+<div class="saved-map">
+<div>
+<small>GOOGLE MAPS</small>
+<strong>🎯 我的 Google Maps 收藏｜美功鐵道一日遊</strong>
+<span>開啟你原本儲存的地點清單</span>
+</div>
+<a href="https://maps.app.goo.gl/DACE1Vv64nwN9R4fA?g_st=i" rel="noopener" target="_blank">開啟收藏地圖 ↗</a>
+</div>
 <div class="kid-interaction">
-  <div class="kid-head">
-    <small>親子互動時間</small>
-    <strong>今天選一選・寫一點點</strong>
-    <span>不用每題都回答，想選再選、想寫再寫。</span>
-  </div>
-  <div class="simple-q"><div class="q-title">今天比較喜歡哪一個？</div><div class="choices"><button type="button" class="choice" data-group="d4q1" onclick="pick(this)">🚤 坐船</button><button type="button" class="choice" data-group="d4q1" onclick="pick(this)">🚆 看火車</button><button type="button" class="choice" data-group="d4q1" onclick="pick(this)">🍴 吃東西</button><button type="button" class="choice" data-group="d4q1" onclick="pick(this)">✈️ 飛機咖啡廳</button></div><input type="hidden" id="d4q1" value=""></div><div class="simple-q"><div class="q-title">火車經過市場時，你覺得？</div><div class="choices"><button type="button" class="choice" data-group="d4q2" onclick="pick(this)">😄 好玩</button><button type="button" class="choice" data-group="d4q2" onclick="pick(this)">😮 很酷</button><button type="button" class="choice" data-group="d4q2" onclick="pick(this)">😐 還好</button><button type="button" class="choice" data-group="d4q2" onclick="pick(this)">🔊 太吵</button></div><input type="hidden" id="d4q2" value=""></div><div class="simple-q write-q"><label for="d4write">今天最好吃的是：</label><textarea id="d4write" rows="2" placeholder="可以寫一個字、一句話，也可以畫個小圖案…"></textarea></div><div class="simple-q need-box"><div class="q-title">現在需要什麼？</div><div class="choices"><button type="button" class="choice need" data-group="d4need" onclick="pick(this)">💧 喝水</button><button type="button" class="choice need" data-group="d4need" onclick="pick(this)">🍴 吃東西</button><button type="button" class="choice need" data-group="d4need" onclick="pick(this)">🪑 休息</button><button type="button" class="choice need" data-group="d4need" onclick="pick(this)">🔇 安靜一下</button><button type="button" class="choice need" data-group="d4need" onclick="pick(this)">🏠 回飯店</button></div></div>
-</div></section>
-<section class="day" id="d5">
- <div class="day-title"><div><small>DAY 5</small><strong>8/26（三）</strong></div><h2>LV 展覽＋<a class="maplink" href="https://www.google.com/maps/search/?api=1&query=%E5%BD%A9%E8%99%B9%E9%9B%B2%E9%9C%84%E9%85%92%E5%BA%97+Bangkok+Thailand" target="_blank" rel="noopener">彩虹雲霄酒店<span class="mapicon">↗</span></a>觀景台自助餐</h2></div>
- <div class="cards">
-  <article><h3>今日重點</h3><ul><li>連續兩天郊區後，今天刻意安排室內緩衝。</li><li>LV 展覽預約 10:30，約逛 30 分後慢慢散步經過中央世界購物中心。</li><li>彩虹觀景台午餐預約 13:15，可吃兩個小時。</li></ul></article>
-  <article><h3>詳細時間表</h3><div class="time"><strong>約 09:15</strong><span>從 Kokotel 出發</span></div><div class="time"><strong>10:30–11:00</strong><span>LV 展覽</span></div><div class="time"><strong>13:15–15:15</strong><span><a class="maplink" href="https://www.google.com/maps/search/?api=1&query=%E5%BD%A9%E8%99%B9%E9%9B%B2%E9%9C%84%E9%85%92%E5%BA%97+Bangkok+Thailand" target="_blank" rel="noopener">彩虹雲霄酒店<span class="mapicon">↗</span></a>觀景台午餐</span></div><div class="time"><strong>15:15–17:00</strong><span>觀景台欣賞、拍照</span></div><div class="time"><strong>下午</strong><span><a class="maplink" href="https://www.google.com/maps/search/?api=1&query=%E6%9B%BC%E8%B0%B7%E8%97%9D%E6%96%87%E4%B8%AD%E5%BF%83+Bangkok+Thailand" target="_blank" rel="noopener">曼谷藝文中心<span class="mapicon">↗</span></a>＋冰淇淋</span></div><div class="time"><strong>晚餐</strong><span><a class="maplink" href="https://www.google.com/maps/search/?api=1&query=Siam+Paragon+Bangkok+Thailand" target="_blank" rel="noopener">Siam Paragon<span class="mapicon">↗</span></a> → <a class="maplink" href="https://www.google.com/maps/search/?api=1&query=Siam+Square+Bangkok+Thailand" target="_blank" rel="noopener">Siam Square<span class="mapicon">↗</span></a>／<a class="maplink" href="https://www.google.com/maps/search/?api=1&query=True+Alpha+Hub+Bangkok+Thailand" target="_blank" rel="noopener">True Alpha Hub<span class="mapicon">↗</span></a>（選一家）</span></div><div class="time"><strong>晚上</strong><span>BTS 回 On Nut；大雨或孩子累直接 Grab</span></div></article>
-  <article><h3>交通方式</h3><div class="row"><b>去程</b><span><a class="maplink" href="https://www.google.com/maps/search/?api=1&query=BTS+On+Nut+Bangkok+Thailand" target="_blank" rel="noopener">BTS On Nut<span class="mapicon">↗</span></a> E9 → 市中心</span></div><div class="row"><b>上午</b><span>LV 展覽 10:30</span></div><div class="row"><b>下午</b><span>13:15–15:15 雲霄酒店自助餐；15:20–17:00 觀景台</span></div><div class="row"><b>傍晚</b><span>17:00–18:00 <a class="maplink" href="https://www.google.com/maps/search/?api=1&query=%E6%9B%BC%E8%B0%B7%E8%97%9D%E6%96%87%E4%B8%AD%E5%BF%83+Bangkok+Thailand" target="_blank" rel="noopener">曼谷藝文中心<span class="mapicon">↗</span></a>＋冰淇淋</span></div><div class="row"><b>晚餐</b><span>Siam</span></div><div class="row"><b>回程</b><span>Siam → On Nut；大雨／累則 Grab 回飯店</span></div></article>
-  <article class="plan"><h3>Plan B</h3><p>雨大 → Siam 全程室內。</p></article>
- </div>
+<div class="kid-head">
+<small>親子互動時間</small>
+<strong>今天選一選・寫一點點</strong>
+<span>不用每題都回答，想選再選、想寫再寫。</span>
+</div>
+<div class="simple-q"><div class="q-title">今天比較喜歡哪一個？</div><div class="choices"><button class="choice" data-group="d4q1" onclick="pick(this)" type="button">🚤 坐船</button><button class="choice" data-group="d4q1" onclick="pick(this)" type="button">🚆 看火車</button><button class="choice" data-group="d4q1" onclick="pick(this)" type="button">🍴 吃東西</button><button class="choice" data-group="d4q1" onclick="pick(this)" type="button">✈️ 飛機咖啡廳</button></div><input id="d4q1" type="hidden" value=""/></div><div class="simple-q"><div class="q-title">火車經過市場時，你覺得？</div><div class="choices"><button class="choice" data-group="d4q2" onclick="pick(this)" type="button">😄 好玩</button><button class="choice" data-group="d4q2" onclick="pick(this)" type="button">😮 很酷</button><button class="choice" data-group="d4q2" onclick="pick(this)" type="button">😐 還好</button><button class="choice" data-group="d4q2" onclick="pick(this)" type="button">🔊 太吵</button></div><input id="d4q2" type="hidden" value=""/></div><div class="simple-q write-q"><label for="d4write">今天最好吃的是：</label><textarea id="d4write" placeholder="可以寫一個字、一句話，也可以畫個小圖案…" rows="2"></textarea></div><div class="simple-q need-box"><div class="q-title">現在需要什麼？</div><div class="choices"><button class="choice need" data-group="d4need" onclick="pick(this)" type="button">💧 喝水</button><button class="choice need" data-group="d4need" onclick="pick(this)" type="button">🍴 吃東西</button><button class="choice need" data-group="d4need" onclick="pick(this)" type="button">🪑 休息</button><button class="choice need" data-group="d4need" onclick="pick(this)" type="button">🔇 安靜一下</button><button class="choice need" data-group="d4need" onclick="pick(this)" type="button">🏠 回飯店</button></div></div>
+</div>
 
-  <div class="saved-map">
-    <div>
-      <small>GOOGLE MAPS</small>
-      <strong>🎯 我的 Google Maps 收藏｜8/26 泰國堉晴家自由行</strong>
-      <span>開啟你原本儲存的地點清單</span>
-    </div>
-    <a href="https://maps.app.goo.gl/tbm5DyDMpg54poHp8?g_st=i" target="_blank" rel="noopener">開啟收藏地圖 ↗</a>
-  </div>
-
+</details>
+<details class="day day-accordion" id="d5">
+<summary><div class="day-main-heading"><div><span class="day-number">DAY 5</span><span class="day-date">8/26（三）</span></div>
+<div class="day-total-title">🎨 自由行・LV 曼谷藝文中心</div><span class="open-label"><span class="closed-text">點我打開這一天</span><span class="open-text">點我收合這一天</span></span>
+</div></summary>
+<div class="day-content">
+<h2>LV 展覽＋<a class="maplink" href="https://www.google.com/maps/search/?api=1&amp;query=%E5%BD%A9%E8%99%B9%E9%9B%B2%E9%9C%84%E9%85%92%E5%BA%97+Bangkok+Thailand" rel="noopener" target="_blank">彩虹雲霄酒店<span class="mapicon">↗</span></a>觀景台自助餐</h2></div>
+<div class="cards">
+<article><h3>今日重點</h3><ul><li>連續兩天郊區後，今天刻意安排室內緩衝。</li><li>LV 展覽預約 10:30，約逛 30 分後慢慢散步經過中央世界購物中心。</li><li>彩虹觀景台午餐預約 13:15，可吃兩個小時。</li></ul></article>
+<article><h3>詳細時間表</h3><div class="time"><strong>約 09:15</strong><span>從 Kokotel 出發</span></div><div class="time"><strong>10:30–11:00</strong><span>LV 展覽</span></div><div class="time"><strong>13:15–15:15</strong><span><a class="maplink" href="https://www.google.com/maps/search/?api=1&amp;query=%E5%BD%A9%E8%99%B9%E9%9B%B2%E9%9C%84%E9%85%92%E5%BA%97+Bangkok+Thailand" rel="noopener" target="_blank">彩虹雲霄酒店<span class="mapicon">↗</span></a>觀景台午餐</span></div><div class="time"><strong>15:15–17:00</strong><span>觀景台欣賞、拍照</span></div><div class="time"><strong>下午</strong><span><a class="maplink" href="https://www.google.com/maps/search/?api=1&amp;query=%E6%9B%BC%E8%B0%B7%E8%97%9D%E6%96%87%E4%B8%AD%E5%BF%83+Bangkok+Thailand" rel="noopener" target="_blank">曼谷藝文中心<span class="mapicon">↗</span></a>＋冰淇淋</span></div><div class="time"><strong>晚餐</strong><span><a class="maplink" href="https://www.google.com/maps/search/?api=1&amp;query=Siam+Paragon+Bangkok+Thailand" rel="noopener" target="_blank">Siam Paragon<span class="mapicon">↗</span></a> → <a class="maplink" href="https://www.google.com/maps/search/?api=1&amp;query=Siam+Square+Bangkok+Thailand" rel="noopener" target="_blank">Siam Square<span class="mapicon">↗</span></a>／<a class="maplink" href="https://www.google.com/maps/search/?api=1&amp;query=True+Alpha+Hub+Bangkok+Thailand" rel="noopener" target="_blank">True Alpha Hub<span class="mapicon">↗</span></a>（選一家）</span></div><div class="time"><strong>晚上</strong><span>BTS 回 On Nut；大雨或孩子累直接 Grab</span></div></article>
+<article><h3>交通方式</h3><div class="row"><b>去程</b><span><a class="maplink" href="https://www.google.com/maps/search/?api=1&amp;query=BTS+On+Nut+Bangkok+Thailand" rel="noopener" target="_blank">BTS On Nut<span class="mapicon">↗</span></a> E9 → 市中心</span></div><div class="row"><b>上午</b><span>LV 展覽 10:30</span></div><div class="row"><b>下午</b><span>13:15–15:15 雲霄酒店自助餐；15:20–17:00 觀景台</span></div><div class="row"><b>傍晚</b><span>17:00–18:00 <a class="maplink" href="https://www.google.com/maps/search/?api=1&amp;query=%E6%9B%BC%E8%B0%B7%E8%97%9D%E6%96%87%E4%B8%AD%E5%BF%83+Bangkok+Thailand" rel="noopener" target="_blank">曼谷藝文中心<span class="mapicon">↗</span></a>＋冰淇淋</span></div><div class="row"><b>晚餐</b><span>Siam</span></div><div class="row"><b>回程</b><span>Siam → On Nut；大雨／累則 Grab 回飯店</span></div></article>
+<article class="plan"><h3>Plan B</h3><p>雨大 → Siam 全程室內。</p></article>
+</div>
+<div class="saved-map">
+<div>
+<small>GOOGLE MAPS</small>
+<strong>🎯 我的 Google Maps 收藏｜8/26 泰國堉晴家自由行</strong>
+<span>開啟你原本儲存的地點清單</span>
+</div>
+<a href="https://maps.app.goo.gl/tbm5DyDMpg54poHp8?g_st=i" rel="noopener" target="_blank">開啟收藏地圖 ↗</a>
+</div>
 <div class="kid-interaction">
-  <div class="kid-head">
-    <small>親子互動時間</small>
-    <strong>今天選一選・寫一點點</strong>
-    <span>不用每題都回答，想選再選、想寫再寫。</span>
-  </div>
-  <div class="simple-q"><div class="q-title">今天比較喜歡哪一個？</div><div class="choices"><button type="button" class="choice" data-group="d5q1" onclick="pick(this)">👜 LV 展覽</button><button type="button" class="choice" data-group="d5q1" onclick="pick(this)">🏙️ 高樓看曼谷</button><button type="button" class="choice" data-group="d5q1" onclick="pick(this)">🍦 吃冰淇淋</button><button type="button" class="choice" data-group="d5q1" onclick="pick(this)">🎨 藝文中心</button></div><input type="hidden" id="d5q1" value=""></div><div class="simple-q"><div class="q-title">從高處看曼谷，你覺得？</div><div class="choices"><button type="button" class="choice" data-group="d5q2" onclick="pick(this)">😍 很漂亮</button><button type="button" class="choice" data-group="d5q2" onclick="pick(this)">😮 好高</button><button type="button" class="choice" data-group="d5q2" onclick="pick(this)">😊 很有趣</button><button type="button" class="choice" data-group="d5q2" onclick="pick(this)">😐 還好</button></div><input type="hidden" id="d5q2" value=""></div><div class="simple-q write-q"><label for="d5write">今天最想畫／寫下來的是：</label><textarea id="d5write" rows="2" placeholder="可以寫一個字、一句話，也可以畫個小圖案…"></textarea></div><div class="simple-q need-box"><div class="q-title">現在需要什麼？</div><div class="choices"><button type="button" class="choice need" data-group="d5need" onclick="pick(this)">💧 喝水</button><button type="button" class="choice need" data-group="d5need" onclick="pick(this)">🍴 吃東西</button><button type="button" class="choice need" data-group="d5need" onclick="pick(this)">🪑 休息</button><button type="button" class="choice need" data-group="d5need" onclick="pick(this)">🔇 安靜一下</button><button type="button" class="choice need" data-group="d5need" onclick="pick(this)">🏠 回飯店</button></div></div>
-</div></section>
-<section class="day" id="d6">
- <div class="day-title"><div><small>DAY 6</small><strong>8/27（四）</strong></div><h2><a class="maplink" href="https://www.google.com/maps/search/?api=1&query=%E9%84%AD%E7%8E%8B%E5%BB%9F+Bangkok+Thailand" target="_blank" rel="noopener">鄭王廟<span class="mapicon">↗</span></a>泰服・<a class="maplink" href="https://www.google.com/maps/search/?api=1&query=ICONSIAM+Bangkok+Thailand" target="_blank" rel="noopener">ICONSIAM<span class="mapicon">↗</span></a>・遊船</h2></div>
- <div class="cards">
-  <article><h3>今日重點</h3><ul><li>上午集中泰服＋<a class="maplink" href="https://www.google.com/maps/search/?api=1&query=%E9%84%AD%E7%8E%8B%E5%BB%9F+Bangkok+Thailand" target="_blank" rel="noopener">鄭王廟<span class="mapicon">↗</span></a>正式拍照，避免午後太熱。</li><li>泰服不預約：Bangkok &amp; Blush／<a class="maplink" href="https://www.google.com/maps/search/?api=1&query=BaaN+WANGDOEM+7+Bangkok+Thailand" target="_blank" rel="noopener">BaaN WANGDOEM 7<span class="mapicon">↗</span></a> 現場二選一。</li><li>午餐可留 Tha Tien，也可直接到 <a class="maplink" href="https://www.google.com/maps/search/?api=1&query=ICONSIAM+Bangkok+Thailand" target="_blank" rel="noopener">ICONSIAM<span class="mapicon">↗</span></a>。</li><li>Meridian Cruise 已訂；15:30 左右一定要到 Pier 1 報到。</li></ul></article>
-  <article><h3>詳細時間表</h3><div class="time"><strong>上午</strong><span>抵達<a class="maplink" href="https://www.google.com/maps/search/?api=1&query=%E9%84%AD%E7%8E%8B%E5%BB%9F+Bangkok+Thailand" target="_blank" rel="noopener">鄭王廟<span class="mapicon">↗</span></a>／Wang Doem Road 泰服店區；泰服二選一＋<a class="maplink" href="https://www.google.com/maps/search/?api=1&query=%E9%84%AD%E7%8E%8B%E5%BB%9F+Bangkok+Thailand" target="_blank" rel="noopener">鄭王廟<span class="mapicon">↗</span></a>拍照</span></div><div class="time"><strong>中午</strong><span>渡船回 Tha Tien；河景午餐或直接前往 <a class="maplink" href="https://www.google.com/maps/search/?api=1&query=ICONSIAM+Bangkok+Thailand" target="_blank" rel="noopener">ICONSIAM<span class="mapicon">↗</span></a></span></div><div class="time"><strong>下午</strong><span><a class="maplink" href="https://www.google.com/maps/search/?api=1&query=ICONSIAM+Bangkok+Thailand" target="_blank" rel="noopener">ICONSIAM<span class="mapicon">↗</span></a>：<a class="maplink" href="https://www.google.com/maps/search/?api=1&query=SOOKSIAM+Bangkok+Thailand" target="_blank" rel="noopener">SOOKSIAM<span class="mapicon">↗</span></a>／拍照／飲料／休息</span></div><div class="time"><strong>15:30–16:15</strong><span><a class="maplink" href="https://www.google.com/maps/search/?api=1&query=ICONSIAM+Bangkok+Thailand" target="_blank" rel="noopener">ICONSIAM<span class="mapicon">↗</span></a> Pier 1 報到</span></div><div class="time"><strong>16:30–18:30</strong><span>Meridian Cruise 2 Sunset Cruise</span></div><div class="time"><strong>晚上</strong><span>有精神看 <a class="maplink" href="https://www.google.com/maps/search/?api=1&query=River+Park+Bangkok+Thailand" target="_blank" rel="noopener">River Park<span class="mapicon">↗</span></a> 水舞；否則直接回飯店</span></div></article>
-  <article><h3>交通方式</h3><div class="row"><b>去程</b><span><a class="maplink" href="https://www.google.com/maps/search/?api=1&query=BTS+On+Nut+Bangkok+Thailand" target="_blank" rel="noopener">BTS On Nut<span class="mapicon">↗</span></a> E9 → Asok E4 → MRT Sukhumvit BL22 → Sanam Chai BL31</span></div><div class="row"><b>過河</b><span>Sanam Chai → <a class="maplink" href="https://www.google.com/maps/search/?api=1&query=Tha+Tien+Pier+Bangkok+Thailand" target="_blank" rel="noopener">Tha Tien Pier<span class="mapicon">↗</span></a> → 渡船 → Wat Arun Pier</span></div><div class="row"><b>中午</b><span>Wat Arun → Tha Tien 午餐 或直接 <a class="maplink" href="https://www.google.com/maps/search/?api=1&query=ICONSIAM+Bangkok+Thailand" target="_blank" rel="noopener">ICONSIAM<span class="mapicon">↗</span></a></span></div><div class="row"><b>下午</b><span>河船前往 <a class="maplink" href="https://www.google.com/maps/search/?api=1&query=ICONSIAM+Bangkok+Thailand" target="_blank" rel="noopener">ICONSIAM<span class="mapicon">↗</span></a>；等太久／雨大改 Grab</span></div><div class="row"><b>回程</b><span>Gold Line Charoen Nakhon G2 → Krung Thon Buri → BTS → Siam → On Nut</span></div></article>
-  <article class="plan"><h3>Plan B</h3><p>泰服排太久 → 換另一家；河船等太久／雨大 → Grab；水舞可刪。</p></article>
- </div>
+<div class="kid-head">
+<small>親子互動時間</small>
+<strong>今天選一選・寫一點點</strong>
+<span>不用每題都回答，想選再選、想寫再寫。</span>
+</div>
+<div class="simple-q"><div class="q-title">今天比較喜歡哪一個？</div><div class="choices"><button class="choice" data-group="d5q1" onclick="pick(this)" type="button">👜 LV 展覽</button><button class="choice" data-group="d5q1" onclick="pick(this)" type="button">🏙️ 高樓看曼谷</button><button class="choice" data-group="d5q1" onclick="pick(this)" type="button">🍦 吃冰淇淋</button><button class="choice" data-group="d5q1" onclick="pick(this)" type="button">🎨 藝文中心</button></div><input id="d5q1" type="hidden" value=""/></div><div class="simple-q"><div class="q-title">從高處看曼谷，你覺得？</div><div class="choices"><button class="choice" data-group="d5q2" onclick="pick(this)" type="button">😍 很漂亮</button><button class="choice" data-group="d5q2" onclick="pick(this)" type="button">😮 好高</button><button class="choice" data-group="d5q2" onclick="pick(this)" type="button">😊 很有趣</button><button class="choice" data-group="d5q2" onclick="pick(this)" type="button">😐 還好</button></div><input id="d5q2" type="hidden" value=""/></div><div class="simple-q write-q"><label for="d5write">今天最想畫／寫下來的是：</label><textarea id="d5write" placeholder="可以寫一個字、一句話，也可以畫個小圖案…" rows="2"></textarea></div><div class="simple-q need-box"><div class="q-title">現在需要什麼？</div><div class="choices"><button class="choice need" data-group="d5need" onclick="pick(this)" type="button">💧 喝水</button><button class="choice need" data-group="d5need" onclick="pick(this)" type="button">🍴 吃東西</button><button class="choice need" data-group="d5need" onclick="pick(this)" type="button">🪑 休息</button><button class="choice need" data-group="d5need" onclick="pick(this)" type="button">🔇 安靜一下</button><button class="choice need" data-group="d5need" onclick="pick(this)" type="button">🏠 回飯店</button></div></div>
+</div>
 
-  <div class="saved-map">
-    <div>
-      <small>GOOGLE MAPS</small>
-      <strong>🎯 我的 Google Maps 收藏｜鄭王廟拍照</strong>
-      <span>開啟你原本儲存的地點清單</span>
-    </div>
-    <a href="https://maps.app.goo.gl/xwAHML1hmXCksehT9?g_st=i" target="_blank" rel="noopener">開啟收藏地圖 ↗</a>
-  </div>
-
+</details>
+<details class="day day-accordion" id="d6">
+<summary><div class="day-main-heading"><div><span class="day-number">DAY 6</span><span class="day-date">8/27（四）</span></div>
+<div class="day-total-title">📸 鄭王廟拍照</div><span class="open-label"><span class="closed-text">點我打開這一天</span><span class="open-text">點我收合這一天</span></span>
+</div></summary>
+<div class="day-content">
+<h2><a class="maplink" href="https://www.google.com/maps/search/?api=1&amp;query=%E9%84%AD%E7%8E%8B%E5%BB%9F+Bangkok+Thailand" rel="noopener" target="_blank">鄭王廟<span class="mapicon">↗</span></a>泰服・<a class="maplink" href="https://www.google.com/maps/search/?api=1&amp;query=ICONSIAM+Bangkok+Thailand" rel="noopener" target="_blank">ICONSIAM<span class="mapicon">↗</span></a>・遊船</h2></div>
+<div class="cards">
+<article><h3>今日重點</h3><ul><li>上午集中泰服＋<a class="maplink" href="https://www.google.com/maps/search/?api=1&amp;query=%E9%84%AD%E7%8E%8B%E5%BB%9F+Bangkok+Thailand" rel="noopener" target="_blank">鄭王廟<span class="mapicon">↗</span></a>正式拍照，避免午後太熱。</li><li>泰服不預約：Bangkok &amp; Blush／<a class="maplink" href="https://www.google.com/maps/search/?api=1&amp;query=BaaN+WANGDOEM+7+Bangkok+Thailand" rel="noopener" target="_blank">BaaN WANGDOEM 7<span class="mapicon">↗</span></a> 現場二選一。</li><li>午餐可留 Tha Tien，也可直接到 <a class="maplink" href="https://www.google.com/maps/search/?api=1&amp;query=ICONSIAM+Bangkok+Thailand" rel="noopener" target="_blank">ICONSIAM<span class="mapicon">↗</span></a>。</li><li>Meridian Cruise 已訂；15:30 左右一定要到 Pier 1 報到。</li></ul></article>
+<article><h3>詳細時間表</h3><div class="time"><strong>上午</strong><span>抵達<a class="maplink" href="https://www.google.com/maps/search/?api=1&amp;query=%E9%84%AD%E7%8E%8B%E5%BB%9F+Bangkok+Thailand" rel="noopener" target="_blank">鄭王廟<span class="mapicon">↗</span></a>／Wang Doem Road 泰服店區；泰服二選一＋<a class="maplink" href="https://www.google.com/maps/search/?api=1&amp;query=%E9%84%AD%E7%8E%8B%E5%BB%9F+Bangkok+Thailand" rel="noopener" target="_blank">鄭王廟<span class="mapicon">↗</span></a>拍照</span></div><div class="time"><strong>中午</strong><span>渡船回 Tha Tien；河景午餐或直接前往 <a class="maplink" href="https://www.google.com/maps/search/?api=1&amp;query=ICONSIAM+Bangkok+Thailand" rel="noopener" target="_blank">ICONSIAM<span class="mapicon">↗</span></a></span></div><div class="time"><strong>下午</strong><span><a class="maplink" href="https://www.google.com/maps/search/?api=1&amp;query=ICONSIAM+Bangkok+Thailand" rel="noopener" target="_blank">ICONSIAM<span class="mapicon">↗</span></a>：<a class="maplink" href="https://www.google.com/maps/search/?api=1&amp;query=SOOKSIAM+Bangkok+Thailand" rel="noopener" target="_blank">SOOKSIAM<span class="mapicon">↗</span></a>／拍照／飲料／休息</span></div><div class="time"><strong>15:30–16:15</strong><span><a class="maplink" href="https://www.google.com/maps/search/?api=1&amp;query=ICONSIAM+Bangkok+Thailand" rel="noopener" target="_blank">ICONSIAM<span class="mapicon">↗</span></a> Pier 1 報到</span></div><div class="time"><strong>16:30–18:30</strong><span>Meridian Cruise 2 Sunset Cruise</span></div><div class="time"><strong>晚上</strong><span>有精神看 <a class="maplink" href="https://www.google.com/maps/search/?api=1&amp;query=River+Park+Bangkok+Thailand" rel="noopener" target="_blank">River Park<span class="mapicon">↗</span></a> 水舞；否則直接回飯店</span></div></article>
+<article><h3>交通方式</h3><div class="row"><b>去程</b><span><a class="maplink" href="https://www.google.com/maps/search/?api=1&amp;query=BTS+On+Nut+Bangkok+Thailand" rel="noopener" target="_blank">BTS On Nut<span class="mapicon">↗</span></a> E9 → Asok E4 → MRT Sukhumvit BL22 → Sanam Chai BL31</span></div><div class="row"><b>過河</b><span>Sanam Chai → <a class="maplink" href="https://www.google.com/maps/search/?api=1&amp;query=Tha+Tien+Pier+Bangkok+Thailand" rel="noopener" target="_blank">Tha Tien Pier<span class="mapicon">↗</span></a> → 渡船 → Wat Arun Pier</span></div><div class="row"><b>中午</b><span>Wat Arun → Tha Tien 午餐 或直接 <a class="maplink" href="https://www.google.com/maps/search/?api=1&amp;query=ICONSIAM+Bangkok+Thailand" rel="noopener" target="_blank">ICONSIAM<span class="mapicon">↗</span></a></span></div><div class="row"><b>下午</b><span>河船前往 <a class="maplink" href="https://www.google.com/maps/search/?api=1&amp;query=ICONSIAM+Bangkok+Thailand" rel="noopener" target="_blank">ICONSIAM<span class="mapicon">↗</span></a>；等太久／雨大改 Grab</span></div><div class="row"><b>回程</b><span>Gold Line Charoen Nakhon G2 → Krung Thon Buri → BTS → Siam → On Nut</span></div></article>
+<article class="plan"><h3>Plan B</h3><p>泰服排太久 → 換另一家；河船等太久／雨大 → Grab；水舞可刪。</p></article>
+</div>
+<div class="saved-map">
+<div>
+<small>GOOGLE MAPS</small>
+<strong>🎯 我的 Google Maps 收藏｜鄭王廟拍照</strong>
+<span>開啟你原本儲存的地點清單</span>
+</div>
+<a href="https://maps.app.goo.gl/xwAHML1hmXCksehT9?g_st=i" rel="noopener" target="_blank">開啟收藏地圖 ↗</a>
+</div>
 <div class="kid-interaction">
-  <div class="kid-head">
-    <small>親子互動時間</small>
-    <strong>今天選一選・寫一點點</strong>
-    <span>不用每題都回答，想選再選、想寫再寫。</span>
-  </div>
-  <div class="simple-q"><div class="q-title">今天最喜歡哪一個？</div><div class="choices"><button type="button" class="choice" data-group="d6q1" onclick="pick(this)">👕 穿泰服</button><button type="button" class="choice" data-group="d6q1" onclick="pick(this)">📷 拍照</button><button type="button" class="choice" data-group="d6q1" onclick="pick(this)">🛕 鄭王廟</button><button type="button" class="choice" data-group="d6q1" onclick="pick(this)">🚢 坐遊船</button></div><input type="hidden" id="d6q1" value=""></div><div class="simple-q"><div class="q-title">今天人多或聲音多的感覺？</div><div class="choices"><button type="button" class="choice" data-group="d6q2" onclick="pick(this)">🙂 可以</button><button type="button" class="choice" data-group="d6q2" onclick="pick(this)">😐 還好</button><button type="button" class="choice" data-group="d6q2" onclick="pick(this)">🔊 太吵</button><button type="button" class="choice" data-group="d6q2" onclick="pick(this)">🪑 想休息</button></div><input type="hidden" id="d6q2" value=""></div><div class="simple-q write-q"><label for="d6write">今天最喜歡的畫面：</label><textarea id="d6write" rows="2" placeholder="可以寫一個字、一句話，也可以畫個小圖案…"></textarea></div><div class="simple-q need-box"><div class="q-title">現在需要什麼？</div><div class="choices"><button type="button" class="choice need" data-group="d6need" onclick="pick(this)">💧 喝水</button><button type="button" class="choice need" data-group="d6need" onclick="pick(this)">🍴 吃東西</button><button type="button" class="choice need" data-group="d6need" onclick="pick(this)">🪑 休息</button><button type="button" class="choice need" data-group="d6need" onclick="pick(this)">🔇 安靜一下</button><button type="button" class="choice need" data-group="d6need" onclick="pick(this)">🏠 回飯店</button></div></div>
-</div></section>
-<section class="day" id="d7">
- <div class="day-title">
-   <div><small>DAY 7</small><strong>8/28（五）</strong></div>
-   <h2>自由搭配</h2>
- </div>
- <div class="free-day">
-   <div class="free-space">
-     <strong>今天自由搭配</strong>
-     <span>行程尚未確定，先留白，之後再慢慢加入想去的地方。</span>
-   </div>
- </div>
+<div class="kid-head">
+<small>親子互動時間</small>
+<strong>今天選一選・寫一點點</strong>
+<span>不用每題都回答，想選再選、想寫再寫。</span>
+</div>
+<div class="simple-q"><div class="q-title">今天最喜歡哪一個？</div><div class="choices"><button class="choice" data-group="d6q1" onclick="pick(this)" type="button">👕 穿泰服</button><button class="choice" data-group="d6q1" onclick="pick(this)" type="button">📷 拍照</button><button class="choice" data-group="d6q1" onclick="pick(this)" type="button">🛕 鄭王廟</button><button class="choice" data-group="d6q1" onclick="pick(this)" type="button">🚢 坐遊船</button></div><input id="d6q1" type="hidden" value=""/></div><div class="simple-q"><div class="q-title">今天人多或聲音多的感覺？</div><div class="choices"><button class="choice" data-group="d6q2" onclick="pick(this)" type="button">🙂 可以</button><button class="choice" data-group="d6q2" onclick="pick(this)" type="button">😐 還好</button><button class="choice" data-group="d6q2" onclick="pick(this)" type="button">🔊 太吵</button><button class="choice" data-group="d6q2" onclick="pick(this)" type="button">🪑 想休息</button></div><input id="d6q2" type="hidden" value=""/></div><div class="simple-q write-q"><label for="d6write">今天最喜歡的畫面：</label><textarea id="d6write" placeholder="可以寫一個字、一句話，也可以畫個小圖案…" rows="2"></textarea></div><div class="simple-q need-box"><div class="q-title">現在需要什麼？</div><div class="choices"><button class="choice need" data-group="d6need" onclick="pick(this)" type="button">💧 喝水</button><button class="choice need" data-group="d6need" onclick="pick(this)" type="button">🍴 吃東西</button><button class="choice need" data-group="d6need" onclick="pick(this)" type="button">🪑 休息</button><button class="choice need" data-group="d6need" onclick="pick(this)" type="button">🔇 安靜一下</button><button class="choice need" data-group="d6need" onclick="pick(this)" type="button">🏠 回飯店</button></div></div>
+</div>
 
+</details>
+<details class="day day-accordion" id="d7">
+<summary><div class="day-main-heading">
+<div><span class="day-number">DAY 7</span><span class="day-date">8/28（五）</span></div>
+<div class="day-total-title">🌿 自由搭配</div><span class="open-label"><span class="closed-text">點我打開這一天</span><span class="open-text">點我收合這一天</span></span>
+</div></summary>
+<div class="day-content">
+<h2>自由搭配</h2>
+</div>
+<div class="free-day">
+<div class="free-space">
+<strong>今天自由搭配</strong>
+<span>行程尚未確定，先留白，之後再慢慢加入想去的地方。</span>
+</div>
+</div>
 <div class="kid-interaction">
-  <div class="kid-head">
-    <small>親子互動時間</small>
-    <strong>今天選一選・寫一點點</strong>
-    <span>不用每題都回答，想選再選、想寫再寫。</span>
-  </div>
-  <div class="simple-q"><div class="q-title">今天想怎麼安排？</div><div class="choices"><button type="button" class="choice" data-group="d7q1" onclick="pick(this)">🏨 輕鬆休息</button><button type="button" class="choice" data-group="d7q1" onclick="pick(this)">🛍️ 去逛街</button><button type="button" class="choice" data-group="d7q1" onclick="pick(this)">🍴 找好吃的</button><button type="button" class="choice" data-group="d7q1" onclick="pick(this)">🚶 出去走走</button></div><input type="hidden" id="d7q1" value=""></div><div class="simple-q"><div class="q-title">今天的體力？</div><div class="choices"><button type="button" class="choice" data-group="d7q2" onclick="pick(this)">💪 很有精神</button><button type="button" class="choice" data-group="d7q2" onclick="pick(this)">🙂 還可以</button><button type="button" class="choice" data-group="d7q2" onclick="pick(this)">😴 有點累</button><button type="button" class="choice" data-group="d7q2" onclick="pick(this)">🏠 想待飯店</button></div><input type="hidden" id="d7q2" value=""></div><div class="simple-q write-q"><label for="d7write">今天我最想去：</label><textarea id="d7write" rows="2" placeholder="可以寫一個字、一句話，也可以畫個小圖案…"></textarea></div><div class="simple-q need-box"><div class="q-title">現在需要什麼？</div><div class="choices"><button type="button" class="choice need" data-group="d7need" onclick="pick(this)">💧 喝水</button><button type="button" class="choice need" data-group="d7need" onclick="pick(this)">🍴 吃東西</button><button type="button" class="choice need" data-group="d7need" onclick="pick(this)">🪑 休息</button><button type="button" class="choice need" data-group="d7need" onclick="pick(this)">🔇 安靜一下</button><button type="button" class="choice need" data-group="d7need" onclick="pick(this)">🏠 回飯店</button></div></div>
-</div></section>
-<section class="day" id="d8">
- <div class="day-title"><div><small>DAY 8</small><strong>8/29（六）</strong></div><h2>回程・<a class="maplink" href="https://www.google.com/maps/search/?api=1&query=BKK+Bangkok+Thailand" target="_blank" rel="noopener">BKK<span class="mapicon">↗</span></a> 機場</h2></div>
- <div class="cards">
-  <article><h3>今日重點</h3><ul><li>CI832 13:20 <a class="maplink" href="https://www.google.com/maps/search/?api=1&query=BKK+Bangkok+Thailand" target="_blank" rel="noopener">BKK<span class="mapicon">↗</span></a> 出發，18:00 抵達桃園 T1。</li><li>最後一天不排景點，時間全部留給退房、交通、退稅與機場。</li><li>08:30 左右離開 Kokotel，目標 約 11:00 抵達 <a class="maplink" href="https://www.google.com/maps/search/?api=1&query=BKK+Bangkok+Thailand" target="_blank" rel="noopener">BKK<span class="mapicon">↗</span></a>。</li><li>若有高價／大量退稅商品，先做 Customs Inspection 再托運。</li></ul></article>
-  <article><h3>詳細時間表</h3><div class="time"><strong>早餐後</strong><span>最後打包；整理護照、退稅單、發票、高價商品</span></div><div class="time"><strong>10:20</strong><span>完成退房與叫車，10:20 搭 MPV／Grab XL 離開 Kokotel</span></div><div class="time"><strong>約 11:00</strong><span>目標抵達 <a class="maplink" href="https://www.google.com/maps/search/?api=1&query=BKK+Bangkok+Thailand" target="_blank" rel="noopener">BKK<span class="mapicon">↗</span></a></span></div><div class="time"><strong>之後</strong><span>必要時 Customs Inspection → CI832 報到／托運 → 安檢／出境 → 管制區退稅</span></div><div class="time"><strong>13:20</strong><span>CI832 起飛</span></div><div class="time"><strong>18:00</strong><span>抵達桃園 T1</span></div></article>
-  <article><h3>交通方式</h3><div class="row"><b>飯店</b><span>早餐 → 最後打包 → 退房</span></div><div class="row"><b>去機場</b><span>MPV／Grab XL｜Kokotel → <a class="maplink" href="https://www.google.com/maps/search/?api=1&query=BKK+Bangkok+Thailand" target="_blank" rel="noopener">BKK<span class="mapicon">↗</span></a>；不拖行李轉 BTS＋ARL</span></div><div class="row"><b>退稅</b><span>需要時先到 Customs Inspection 查驗</span></div><div class="row"><b>機場</b><span>CI832 報到／托運 → 安檢／出境 → 管制區退稅</span></div><div class="row"><b>返台</b><span><a class="maplink" href="https://www.google.com/maps/search/?api=1&query=BKK+Bangkok+Thailand" target="_blank" rel="noopener">BKK<span class="mapicon">↗</span></a> 13:20 → TPE T1 18:00</span></div></article>
-  <article class="plan"><h3>Plan B</h3><p>雨大／退稅多／行李多時，請預留更多緩衝；最後一天不增加任何景點。</p></article>
- </div>
+<div class="kid-head">
+<small>親子互動時間</small>
+<strong>今天選一選・寫一點點</strong>
+<span>不用每題都回答，想選再選、想寫再寫。</span>
+</div>
+<div class="simple-q"><div class="q-title">今天想怎麼安排？</div><div class="choices"><button class="choice" data-group="d7q1" onclick="pick(this)" type="button">🏨 輕鬆休息</button><button class="choice" data-group="d7q1" onclick="pick(this)" type="button">🛍️ 去逛街</button><button class="choice" data-group="d7q1" onclick="pick(this)" type="button">🍴 找好吃的</button><button class="choice" data-group="d7q1" onclick="pick(this)" type="button">🚶 出去走走</button></div><input id="d7q1" type="hidden" value=""/></div><div class="simple-q"><div class="q-title">今天的體力？</div><div class="choices"><button class="choice" data-group="d7q2" onclick="pick(this)" type="button">💪 很有精神</button><button class="choice" data-group="d7q2" onclick="pick(this)" type="button">🙂 還可以</button><button class="choice" data-group="d7q2" onclick="pick(this)" type="button">😴 有點累</button><button class="choice" data-group="d7q2" onclick="pick(this)" type="button">🏠 想待飯店</button></div><input id="d7q2" type="hidden" value=""/></div><div class="simple-q write-q"><label for="d7write">今天我最想去：</label><textarea id="d7write" placeholder="可以寫一個字、一句話，也可以畫個小圖案…" rows="2"></textarea></div><div class="simple-q need-box"><div class="q-title">現在需要什麼？</div><div class="choices"><button class="choice need" data-group="d7need" onclick="pick(this)" type="button">💧 喝水</button><button class="choice need" data-group="d7need" onclick="pick(this)" type="button">🍴 吃東西</button><button class="choice need" data-group="d7need" onclick="pick(this)" type="button">🪑 休息</button><button class="choice need" data-group="d7need" onclick="pick(this)" type="button">🔇 安靜一下</button><button class="choice need" data-group="d7need" onclick="pick(this)" type="button">🏠 回飯店</button></div></div>
+</div>
 
+</details>
+<details class="day day-accordion" id="d8">
+<summary><div class="day-main-heading"><div><span class="day-number">DAY 8</span><span class="day-date">8/29（六）</span></div>
+<div class="day-total-title">🧳 回程・前往 BKK 機場</div><span class="open-label"><span class="closed-text">點我打開這一天</span><span class="open-text">點我收合這一天</span></span>
+</div></summary>
+<div class="day-content">
+<h2>回程・<a class="maplink" href="https://www.google.com/maps/search/?api=1&amp;query=BKK+Bangkok+Thailand" rel="noopener" target="_blank">BKK<span class="mapicon">↗</span></a> 機場</h2></div>
+<div class="cards">
+<article><h3>今日重點</h3><ul><li>CI832 13:20 <a class="maplink" href="https://www.google.com/maps/search/?api=1&amp;query=BKK+Bangkok+Thailand" rel="noopener" target="_blank">BKK<span class="mapicon">↗</span></a> 出發，18:00 抵達桃園 T1。</li><li>最後一天不排景點，時間全部留給退房、交通、退稅與機場。</li><li>08:30 左右離開 Kokotel，目標 11:00 前 抵達 <a class="maplink" href="https://www.google.com/maps/search/?api=1&amp;query=BKK+Bangkok+Thailand" rel="noopener" target="_blank">BKK<span class="mapicon">↗</span></a>。</li><li>若有高價／大量退稅商品，先做 Customs Inspection 再托運。</li></ul></article>
+<article><h3>詳細時間表</h3><div class="time"><strong>早餐後</strong><span>最後打包；整理護照、退稅單、發票、高價商品</span></div><div class="time"><strong>10:20</strong><span>完成退房與叫車，10:20 搭 MPV／Grab XL 離開 Kokotel</span></div><div class="time"><strong>11:00 前</strong><span>目標抵達 <a class="maplink" href="https://www.google.com/maps/search/?api=1&amp;query=BKK+Bangkok+Thailand" rel="noopener" target="_blank">BKK<span class="mapicon">↗</span></a></span></div><div class="time"><strong>之後</strong><span>必要時 Customs Inspection → CI832 報到／托運 → 安檢／出境 → 管制區退稅</span></div><div class="time"><strong>13:20</strong><span>CI832 起飛</span></div><div class="time"><strong>18:00</strong><span>抵達桃園 T1</span></div></article>
+<article><h3>交通方式</h3><div class="row"><b>飯店</b><span>早餐 → 最後打包 → 退房</span></div><div class="row"><b>去機場</b><span>MPV／Grab XL｜Kokotel → <a class="maplink" href="https://www.google.com/maps/search/?api=1&amp;query=BKK+Bangkok+Thailand" rel="noopener" target="_blank">BKK<span class="mapicon">↗</span></a>；不拖行李轉 BTS＋ARL</span></div><div class="row"><b>退稅</b><span>需要時先到 Customs Inspection 查驗</span></div><div class="row"><b>機場</b><span>CI832 報到／托運 → 安檢／出境 → 管制區退稅</span></div><div class="row"><b>返台</b><span><a class="maplink" href="https://www.google.com/maps/search/?api=1&amp;query=BKK+Bangkok+Thailand" rel="noopener" target="_blank">BKK<span class="mapicon">↗</span></a> 13:20 → TPE T1 18:00</span></div></article>
+<article class="plan"><h3>Plan B</h3><p>雨大／退稅多／行李多時，請預留更多緩衝；最後一天不增加任何景點。</p></article>
+</div>
 <div class="kid-interaction">
-  <div class="kid-head">
-    <small>親子互動時間</small>
-    <strong>今天選一選・寫一點點</strong>
-    <span>不用每題都回答，想選再選、想寫再寫。</span>
-  </div>
-  <div class="simple-q"><div class="q-title">這趟曼谷旅行最喜歡什麼？</div><div class="choices"><button type="button" class="choice" data-group="d8q1" onclick="pick(this)">🦁 動物</button><button type="button" class="choice" data-group="d8q1" onclick="pick(this)">🚆 火車／交通</button><button type="button" class="choice" data-group="d8q1" onclick="pick(this)">🛕 景點</button><button type="button" class="choice" data-group="d8q1" onclick="pick(this)">🍴 美食</button></div><input type="hidden" id="d8q1" value=""></div><div class="simple-q"><div class="q-title">下次還想來曼谷嗎？</div><div class="choices"><button type="button" class="choice" data-group="d8q2" onclick="pick(this)">❤️ 想</button><button type="button" class="choice" data-group="d8q2" onclick="pick(this)">🤔 可以想想</button><button type="button" class="choice" data-group="d8q2" onclick="pick(this)">😐 都可以</button><button type="button" class="choice" data-group="d8q2" onclick="pick(this)">🏠 想去別的地方</button></div><input type="hidden" id="d8q2" value=""></div><div class="simple-q write-q"><label for="d8write">這次旅行我最想記住：</label><textarea id="d8write" rows="2" placeholder="可以寫一個字、一句話，也可以畫個小圖案…"></textarea></div><div class="simple-q need-box"><div class="q-title">現在需要什麼？</div><div class="choices"><button type="button" class="choice need" data-group="d8need" onclick="pick(this)">💧 喝水</button><button type="button" class="choice need" data-group="d8need" onclick="pick(this)">🍴 吃東西</button><button type="button" class="choice need" data-group="d8need" onclick="pick(this)">🪑 休息</button><button type="button" class="choice need" data-group="d8need" onclick="pick(this)">🔇 安靜一下</button><button type="button" class="choice need" data-group="d8need" onclick="pick(this)">🏠 回飯店</button></div></div>
-</div></section>
+<div class="kid-head">
+<small>親子互動時間</small>
+<strong>今天選一選・寫一點點</strong>
+<span>不用每題都回答，想選再選、想寫再寫。</span>
+</div>
+<div class="simple-q"><div class="q-title">這趟曼谷旅行最喜歡什麼？</div><div class="choices"><button class="choice" data-group="d8q1" onclick="pick(this)" type="button">🦁 動物</button><button class="choice" data-group="d8q1" onclick="pick(this)" type="button">🚆 火車／交通</button><button class="choice" data-group="d8q1" onclick="pick(this)" type="button">🛕 景點</button><button class="choice" data-group="d8q1" onclick="pick(this)" type="button">🍴 美食</button></div><input id="d8q1" type="hidden" value=""/></div><div class="simple-q"><div class="q-title">下次還想來曼谷嗎？</div><div class="choices"><button class="choice" data-group="d8q2" onclick="pick(this)" type="button">❤️ 想</button><button class="choice" data-group="d8q2" onclick="pick(this)" type="button">🤔 可以想想</button><button class="choice" data-group="d8q2" onclick="pick(this)" type="button">😐 都可以</button><button class="choice" data-group="d8q2" onclick="pick(this)" type="button">🏠 想去別的地方</button></div><input id="d8q2" type="hidden" value=""/></div><div class="simple-q write-q"><label for="d8write">這次旅行我最想記住：</label><textarea id="d8write" placeholder="可以寫一個字、一句話，也可以畫個小圖案…" rows="2"></textarea></div><div class="simple-q need-box"><div class="q-title">現在需要什麼？</div><div class="choices"><button class="choice need" data-group="d8need" onclick="pick(this)" type="button">💧 喝水</button><button class="choice need" data-group="d8need" onclick="pick(this)" type="button">🍴 吃東西</button><button class="choice need" data-group="d8need" onclick="pick(this)" type="button">🪑 休息</button><button class="choice need" data-group="d8need" onclick="pick(this)" type="button">🔇 安靜一下</button><button class="choice need" data-group="d8need" onclick="pick(this)" type="button">🏠 回飯店</button></div></div>
+</div>
+
+</details>
 <section class="extras" id="safe"><div class="extra-grid">
 <div class="note"><h3>護照遺失怎麼辦？</h3><p>先重新確認行李、衣物、飯店與曾到訪的店家；確認遺失後，到附近警察局取得報案證明，再聯絡駐泰國台北經濟文化辦事處，依官方指示辦理旅行文件。</p><p><b>小提醒：</b>護照資料頁、機票、保險與訂房憑證，出發前各留一份手機離線備份。</p></div>
 <div class="note"><h3>親子安全小約定</h3><p>走散時不亂跑，先回到事先約好的集合點。孩子身上可放飯店名稱與大人電話，但不要放護照正本。</p><p>天氣太熱、下大雨或孩子累了，就直接啟動 Plan B。</p></div>
 </div></section>
-<section class="extras" id="pack"><div class="note"><h3>出發前快速檢查</h3><p>□ 護照正本 × 3　□ TDAC QR × 3　□ 電子機票／訂位代號<br>□ 飯店憑證　□ 保險資料　□ 信用卡／現金／泰銖<br>□ 手機／充電線／行動電源　□ eSIM／SIM　□ 防曬／防蚊<br>□ 寺廟遮肩遮膝衣物　□ 常用藥　□ 折傘</p></div></section>
+<section class="extras" id="pack"><div class="note"><h3>出發前快速檢查</h3><p>□ 護照正本 × 3　□ TDAC QR × 3　□ 電子機票／訂位代號<br/>□ 飯店憑證　□ 保險資料　□ 信用卡／現金／泰銖<br/>□ 手機／充電線／行動電源　□ eSIM／SIM　□ 防曬／防蚊<br/>□ 寺廟遮肩遮膝衣物　□ 常用藥　□ 折傘</p></div></section>
 <footer>2026 曼谷親子自由行・繁體中文大字版</footer>
 <script>
 let fs=19; function apply(){document.documentElement.style.setProperty('--fs',fs+'px');localStorage.setItem('bangkokFont',fs)}
@@ -326,6 +471,27 @@ document.addEventListener('DOMContentLoaded',()=>{
   });
 });
 </script>
+<a aria-label="回到最前面" href="#top" id="backToTop" title="回到最前面">↑</a>
+<script>
+document.addEventListener('DOMContentLoaded', function(){
+  document.querySelectorAll('nav a[href^="#d"]').forEach(function(a){
+    a.addEventListener('click', function(){
+      const el = document.querySelector(a.getAttribute('href'));
+      if(el && el.tagName === 'DETAILS') el.open = true;
+    });
+  });
 
-<a id="backToTop" href="#top" aria-label="回到最前面" title="回到最前面">↑</a>
+  function openHashDay(){
+    if(location.hash && /^#d[1-8]$/.test(location.hash)){
+      const el=document.querySelector(location.hash);
+      if(el && el.tagName==='DETAILS'){
+        el.open=true;
+        setTimeout(()=>el.scrollIntoView({behavior:'smooth',block:'start'}),80);
+      }
+    }
+  }
+  openHashDay();
+  window.addEventListener('hashchange', openHashDay);
+});
+</script>
 </body></html>
